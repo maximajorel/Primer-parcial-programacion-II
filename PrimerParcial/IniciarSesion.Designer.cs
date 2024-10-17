@@ -1,6 +1,6 @@
 ﻿namespace PrimerParcial
 {
-    partial class Form1
+    partial class IniciarSesion
     {
         /// <summary>
         ///  Required designer variable.
@@ -90,7 +90,7 @@
             textBoxContraseña.TabIndex = 5;
             textBoxContraseña.UseSystemPasswordChar = true;
             // 
-            // Form1
+            // IniciarSesion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -101,7 +101,7 @@
             Controls.Add(labelContraseña);
             Controls.Add(LabelUsuario);
             Controls.Add(labelIniciarSesion);
-            Name = "Form1";
+            Name = "IniciarSesion";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();

@@ -1,10 +1,12 @@
 using Negocio;
+using MenuPrincipal;
 namespace PrimerParcial
 {
-    public partial class Form1 : Form
+    public partial class IniciarSesion : Form
     {
-        ConexionSQL_Negocio conexion = new ConexionSQL_Negocio();
-        public Form1()
+        ConexionSQL_Negocio conexion = new ConexionSQL_Negocio();        
+
+        public IniciarSesion()
         {
             InitializeComponent();
         }
@@ -16,8 +18,12 @@ namespace PrimerParcial
 
         private void botonIniciarSesion_Click(object sender, EventArgs e)
         {
+             
             if (conexion.iniciarSesion(textboxUsuario.Text, textBoxContraseña.Text) == 1) {
                 MessageBox.Show("Ok");
+                MenuPrincipal.MenuPrincipal menu = new MenuPrincipal.MenuPrincipal();
+                menu.Show();
+                this.Hide();
             }
             else {
                 MessageBox.Show("Dato incorrecto");
