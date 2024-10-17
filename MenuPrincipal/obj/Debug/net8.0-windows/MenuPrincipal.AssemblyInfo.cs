@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MenuPrincipal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a186111e7e530e1c6fb2858d97d7c49e53a20597")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b052ffce7f656cda389d758af72a476e3aebe80a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MenuPrincipal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MenuPrincipal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

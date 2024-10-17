@@ -28,34 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            BotonSalir = new Button();
+            botonActualizacionEmpleados = new Button();
+            botonCompraProducto = new Button();
+            botonVentaDeProductos = new Button();
+            botonConsultaMovimientos = new Button();
             SuspendLayout();
             // 
-            // label1
+            // BotonSalir
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(362, 204);
-            label1.Name = "label1";
-            label1.Size = new Size(87, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Menu Principal";
-            label1.Click += label1_Click;
+            BotonSalir.Location = new Point(643, 415);
+            BotonSalir.Name = "BotonSalir";
+            BotonSalir.Size = new Size(145, 23);
+            BotonSalir.TabIndex = 1;
+            BotonSalir.Text = "Salir del sistema";
+            BotonSalir.UseVisualStyleBackColor = true;
+            BotonSalir.Click += BotonSalir_Click;
+            // 
+            // botonActualizacionEmpleados
+            // 
+            botonActualizacionEmpleados.Location = new Point(88, 130);
+            botonActualizacionEmpleados.Name = "botonActualizacionEmpleados";
+            botonActualizacionEmpleados.Size = new Size(189, 116);
+            botonActualizacionEmpleados.TabIndex = 2;
+            botonActualizacionEmpleados.Text = "Actualizar Roles de usuarios";
+            botonActualizacionEmpleados.UseVisualStyleBackColor = true;
+            botonActualizacionEmpleados.Click += botonActualizacionEmpleados_Click;
+            // 
+            // botonCompraProducto
+            // 
+            botonCompraProducto.Location = new Point(283, 130);
+            botonCompraProducto.Name = "botonCompraProducto";
+            botonCompraProducto.Size = new Size(189, 116);
+            botonCompraProducto.TabIndex = 3;
+            botonCompraProducto.Text = "Compra de Producto";
+            botonCompraProducto.UseVisualStyleBackColor = true;
+            botonCompraProducto.Click += botonCompraProducto_Click;
+            // 
+            // botonVentaDeProductos
+            // 
+            botonVentaDeProductos.Location = new Point(478, 130);
+            botonVentaDeProductos.Name = "botonVentaDeProductos";
+            botonVentaDeProductos.Size = new Size(189, 116);
+            botonVentaDeProductos.TabIndex = 4;
+            botonVentaDeProductos.Text = "Venta de Productos";
+            botonVentaDeProductos.UseVisualStyleBackColor = true;
+            botonVentaDeProductos.Click += botonVentaDeProductos_Click;
+            // 
+            // botonConsultaMovimientos
+            // 
+            botonConsultaMovimientos.Location = new Point(88, 252);
+            botonConsultaMovimientos.Name = "botonConsultaMovimientos";
+            botonConsultaMovimientos.RightToLeft = RightToLeft.No;
+            botonConsultaMovimientos.Size = new Size(579, 37);
+            botonConsultaMovimientos.TabIndex = 5;
+            botonConsultaMovimientos.Text = "Acciones de producto";
+            botonConsultaMovimientos.UseVisualStyleBackColor = true;
+            botonConsultaMovimientos.Click += botonConsultaMovimientos_Click;
             // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(botonConsultaMovimientos);
+            Controls.Add(botonVentaDeProductos);
+            Controls.Add(botonCompraProducto);
+            Controls.Add(botonActualizacionEmpleados);
+            Controls.Add(BotonSalir);
             Name = "MenuPrincipal";
-            Text = "Form1";
+            Text = "Menú Principal";
             Load += MenuPrincipal_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
+        private Button BotonSalir;
+        private Button botonActualizacionEmpleados;
+        private Button botonCompraProducto;
+        private Button botonVentaDeProductos;
+        private Button botonConsultaMovimientos;
     }
 }

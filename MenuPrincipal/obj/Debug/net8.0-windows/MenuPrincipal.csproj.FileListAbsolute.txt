@@ -15,3 +15,42 @@ E:\Radix Cloud\Documentos personales\Facultad\Materias\Programacion II\Repositor
 E:\Radix Cloud\Documentos personales\Facultad\Materias\Programacion II\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.pdb
 E:\Radix Cloud\Documentos personales\Facultad\Materias\Programacion II\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.genruntimeconfig.cache
 E:\Radix Cloud\Documentos personales\Facultad\Materias\Programacion II\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\ref\MenuPrincipal.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\MenuPrincipal.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\MenuPrincipal.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\MenuPrincipal.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\MenuPrincipal.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\MenuPrincipal.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.MenuPrincipal.resources
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.csproj.GenerateResource.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.AssemblyInfoInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.AssemblyInfo.cs
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.csproj.CoreCompileInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.sourcelink.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\refint\MenuPrincipal.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.genruntimeconfig.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\ref\MenuPrincipal.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionActualizarRoles.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionActualizarRoles.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionActualizarRoles.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionActualizarRoles.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionActualizarRoles.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrincipal.csproj.AssemblyReference.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\obj\Debug\net8.0-windows\MenuPrin.7F9288B6.Up2Date
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionComprarProducto.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionComprarProducto.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionComprarProducto.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionComprarProducto.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionComprarProducto.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionVenderProducto.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionVenderProducto.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionVenderProducto.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionVenderProducto.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionVenderProducto.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb

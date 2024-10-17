@@ -81,6 +81,7 @@
             textboxUsuario.Name = "textboxUsuario";
             textboxUsuario.Size = new Size(305, 23);
             textboxUsuario.TabIndex = 4;
+            textboxUsuario.TextChanged += textboxUsuario_TextChanged;
             // 
             // textBoxContraseña
             // 

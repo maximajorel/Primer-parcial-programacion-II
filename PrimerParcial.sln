@@ -5,11 +5,22 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentacion_Login", "PrimerParcial\Presentacion_Login.csproj", "{E95BEE4A-DEE5-49B8-85FC-64CCB0A5880B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{6F96C9BF-5592-4DFC-A224-2685A7F0FBA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datos", "Datos\Datos.csproj", "{6F96C9BF-5592-4DFC-A224-2685A7F0FBA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{2BB1D0EB-BF16-4106-8570-69AD6CEDBF70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Negocio", "Negocio\Negocio.csproj", "{2BB1D0EB-BF16-4106-8570-69AD6CEDBF70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuPrincipal", "MenuPrincipal\MenuPrincipal.csproj", "{72E44E56-97C2-4177-93CF-3544A4EA7381}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuPrincipal", "MenuPrincipal\MenuPrincipal.csproj", "{72E44E56-97C2-4177-93CF-3544A4EA7381}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2BB1D0EB-BF16-4106-8570-69AD6CEDBF70} = {2BB1D0EB-BF16-4106-8570-69AD6CEDBF70}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionActualizarRoles", "PresentacionActualizarRoles\PresentacionActualizarRoles.csproj", "{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionComprarProducto", "PresentacionComprarProducto\PresentacionComprarProducto.csproj", "{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionVenderProducto", "PresentacionVenderProducto\PresentacionVenderProducto.csproj", "{A56BA26F-27FC-46A9-956D-9909645D5C8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionConsultaMovimientos", "PresentacionConsultaMovimientos\PresentacionConsultaMovimientos.csproj", "{98CAE382-EBF0-4993-AF7E-908CDD6E5778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +44,22 @@ Global
 		{72E44E56-97C2-4177-93CF-3544A4EA7381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E44E56-97C2-4177-93CF-3544A4EA7381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E44E56-97C2-4177-93CF-3544A4EA7381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56BA26F-27FC-46A9-956D-9909645D5C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56BA26F-27FC-46A9-956D-9909645D5C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56BA26F-27FC-46A9-956D-9909645D5C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56BA26F-27FC-46A9-956D-9909645D5C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CAE382-EBF0-4993-AF7E-908CDD6E5778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CAE382-EBF0-4993-AF7E-908CDD6E5778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CAE382-EBF0-4993-AF7E-908CDD6E5778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CAE382-EBF0-4993-AF7E-908CDD6E5778}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

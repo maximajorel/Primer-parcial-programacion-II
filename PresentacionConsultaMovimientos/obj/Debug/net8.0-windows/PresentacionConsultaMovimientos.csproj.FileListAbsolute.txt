@@ -1,0 +1,17 @@
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.GenerateResource.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.AssemblyInfoInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.AssemblyInfo.cs
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.CoreCompileInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.sourcelink.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.ConsultaMovimiento.resources
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\refint\PresentacionConsultaMovimientos.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.genruntimeconfig.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\ref\PresentacionConsultaMovimientos.dll

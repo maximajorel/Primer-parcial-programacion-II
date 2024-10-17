@@ -1,0 +1,17 @@
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\bin\Debug\net8.0-windows\PresentacionActualizarRoles.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\bin\Debug\net8.0-windows\PresentacionActualizarRoles.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\bin\Debug\net8.0-windows\PresentacionActualizarRoles.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\bin\Debug\net8.0-windows\PresentacionActualizarRoles.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\bin\Debug\net8.0-windows\PresentacionActualizarRoles.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.actualizarRoles.resources
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.csproj.GenerateResource.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.AssemblyInfoInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.AssemblyInfo.cs
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.csproj.CoreCompileInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.sourcelink.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\refint\PresentacionActualizarRoles.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\PresentacionActualizarRoles.genruntimeconfig.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionActualizarRoles\obj\Debug\net8.0-windows\ref\PresentacionActualizarRoles.dll

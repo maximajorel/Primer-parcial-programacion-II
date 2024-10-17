@@ -602,6 +602,12 @@
       "MenuPrincipal/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "PresentacionActualizarRoles": "1.0.0",
+          "PresentacionComprarProducto": "1.0.0",
+          "PresentacionConsultaMovimientos": "1.0.0",
+          "PresentacionVenderProducto": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/MenuPrincipal.dll": {}
         },
@@ -625,6 +631,58 @@
         "runtime": {
           "bin/placeholder/Negocio.dll": {}
         }
+      },
+      "PresentacionActualizarRoles/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PresentacionActualizarRoles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PresentacionActualizarRoles.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "PresentacionComprarProducto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PresentacionComprarProducto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PresentacionComprarProducto.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "PresentacionConsultaMovimientos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PresentacionConsultaMovimientos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PresentacionConsultaMovimientos.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "PresentacionVenderProducto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PresentacionVenderProducto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PresentacionVenderProducto.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -1734,6 +1792,26 @@
       "type": "project",
       "path": "../Negocio/Negocio.csproj",
       "msbuildProject": "../Negocio/Negocio.csproj"
+    },
+    "PresentacionActualizarRoles/1.0.0": {
+      "type": "project",
+      "path": "../PresentacionActualizarRoles/PresentacionActualizarRoles.csproj",
+      "msbuildProject": "../PresentacionActualizarRoles/PresentacionActualizarRoles.csproj"
+    },
+    "PresentacionComprarProducto/1.0.0": {
+      "type": "project",
+      "path": "../PresentacionComprarProducto/PresentacionComprarProducto.csproj",
+      "msbuildProject": "../PresentacionComprarProducto/PresentacionComprarProducto.csproj"
+    },
+    "PresentacionConsultaMovimientos/1.0.0": {
+      "type": "project",
+      "path": "../PresentacionConsultaMovimientos/PresentacionConsultaMovimientos.csproj",
+      "msbuildProject": "../PresentacionConsultaMovimientos/PresentacionConsultaMovimientos.csproj"
+    },
+    "PresentacionVenderProducto/1.0.0": {
+      "type": "project",
+      "path": "../PresentacionVenderProducto/PresentacionVenderProducto.csproj",
+      "msbuildProject": "../PresentacionVenderProducto/PresentacionVenderProducto.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1749,11 +1827,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\PrimerParcial\\Presentacion_Login.csproj",
+      "projectUniqueName": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PrimerParcial\\Presentacion_Login.csproj",
       "projectName": "Presentacion_Login",
-      "projectPath": "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\PrimerParcial\\Presentacion_Login.csproj",
+      "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PrimerParcial\\Presentacion_Login.csproj",
       "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-      "outputPath": "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\PrimerParcial\\obj\\",
+      "outputPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PrimerParcial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1773,11 +1851,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj": {
-              "projectPath": "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj"
+            "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj": {
+              "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj"
             },
-            "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
-              "projectPath": "E:\\Radix Cloud\\Documentos personales\\Facultad\\Materias\\Programacion II\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
+            "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+              "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
             }
           }
         }

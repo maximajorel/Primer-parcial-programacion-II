@@ -1,0 +1,17 @@
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\bin\Debug\net8.0-windows\PresentacionComprarProducto.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\bin\Debug\net8.0-windows\PresentacionComprarProducto.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\bin\Debug\net8.0-windows\PresentacionComprarProducto.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\bin\Debug\net8.0-windows\PresentacionComprarProducto.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\bin\Debug\net8.0-windows\PresentacionComprarProducto.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.ComprarProducto.resources
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.csproj.GenerateResource.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.AssemblyInfoInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.AssemblyInfo.cs
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.csproj.CoreCompileInputs.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.sourcelink.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\refint\PresentacionComprarProducto.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\PresentacionComprarProducto.genruntimeconfig.cache
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\PresentacionComprarProducto\obj\Debug\net8.0-windows\ref\PresentacionComprarProducto.dll
