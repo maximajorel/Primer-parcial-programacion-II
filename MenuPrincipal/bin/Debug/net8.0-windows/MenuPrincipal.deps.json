@@ -398,6 +398,9 @@
         }
       },
       "PresentacionVenderProducto/1.0.0": {
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
         "runtime": {
           "PresentacionVenderProducto.dll": {
             "assemblyVersion": "1.0.0",

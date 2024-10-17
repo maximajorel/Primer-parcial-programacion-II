@@ -86,5 +86,40 @@ namespace Datos
             return tabla;
 
         }
+
+        // Funcion para agregar usuarios (Aca se insertan los datos de los usuarios)
+
+        public void agregarUsuario(string nombre, string apellido, string telefono, string fechaNac, string usuario, string contraseña, string rol) { 
+        
+            conexion.Open();
+            string consulta = $"insert into Empleado (Apellido, Nombre, Telefono, FechaNac, Usuario, Clave,rolEmpleado) values ('{nombre}', '{apellido}', '{telefono}','{fechaNac}','{usuario}','{contraseña}','{rol}');";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+        }
+
+        // Eliminar usuario
+        public void eliminarUsuario(string id)
+        {
+            conexion.Open();
+            string consulta = $"delete from Empleado where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+
+        // Editar usuarios 
+        public void editarUsuario(string id, string nombre, string apellido, string telefono, string fechaNac, string usuario, string contraseña, string rol)
+        {
+            conexion.Open();
+            string consulta = $"update Empleado set Apellido = '{apellido}', Nombre = '{nombre}', Telefono = '{telefono}', FechaNac = '{fechaNac}', Usuario = '{usuario}', Clave = '{contraseña}', rolEmpleado = '{rol}' where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+
     }
+
+
 }

@@ -31,5 +31,21 @@ namespace Negocio
         {
             return conexion.verVentaProducto();
         }
+        
+        public void agregarUsuario(string apellido, string nombre, string telefono, string fechaNac, string usuario, string contraseña, string rol)
+        {
+            conexion.agregarUsuario(apellido, nombre, telefono, fechaNac, usuario, contraseña, rol);
+        }
+
+        public void eliminarUsuario( string id)
+        {
+           conexion.eliminarUsuario(id);
+        }
+
+        public void editarUsuario(string id, string apellido, string nombre, string telefono, string fechaNac, string usuario, string contraseña, string rol)
+        {
+            conexion.editarUsuario(id, apellido, nombre, telefono, fechaNac, usuario, contraseña, rol);
+        }
+
     }
 }

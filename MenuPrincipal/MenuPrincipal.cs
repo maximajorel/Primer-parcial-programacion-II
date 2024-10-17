@@ -33,10 +33,12 @@ namespace MenuPrincipal
 
         private void botonActualizacionEmpleados_Click(object sender, EventArgs e)
         {
-            actualizarRoles actualizarRoles = new actualizarRoles();
-
+            // Mostrar la ventana actualizarRoles, y cuando se cierre, mostrar esta ventana
+            actualizarRoles actualizarRoles = new actualizarRoles();       
             actualizarRoles.Show();
             this.Hide();
+
+
         }
 
         private void botonCompraProducto_Click(object sender, EventArgs e)
@@ -59,6 +61,8 @@ namespace MenuPrincipal
             consultaMovimientos.Show();
             this.Hide();
             
+
+
         }
     }
 }
