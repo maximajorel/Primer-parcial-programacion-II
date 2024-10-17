@@ -28,19 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            tablaProductos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
             SuspendLayout();
+            // 
+            // tablaProductos
+            // 
+            tablaProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tablaProductos.Location = new Point(12, 12);
+            tablaProductos.Name = "tablaProductos";
+            tablaProductos.Size = new Size(776, 280);
+            tablaProductos.TabIndex = 0;
+            tablaProductos.CellContentClick += tablaProductos_CellContentClick;
             // 
             // ConsultaMovimiento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(tablaProductos);
             Name = "ConsultaMovimiento";
             Text = "Form1";
             Load += ConsultaMovimiento_Load;
+            ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView tablaProductos;
     }
 }

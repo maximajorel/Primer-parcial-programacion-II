@@ -635,6 +635,9 @@
       "PresentacionActualizarRoles/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PresentacionActualizarRoles.dll": {}
         },
@@ -648,6 +651,9 @@
       "PresentacionComprarProducto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PresentacionComprarProducto.dll": {}
         },
@@ -661,6 +667,9 @@
       "PresentacionConsultaMovimientos/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PresentacionConsultaMovimientos.dll": {}
         },
@@ -674,6 +683,9 @@
       "PresentacionVenderProducto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/PresentacionVenderProducto.dll": {}
         },

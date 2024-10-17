@@ -1,3 +1,5 @@
+using Negocio;
+using System.Data;
 namespace PresentacionComprarProducto
 {
     public partial class ComprarProducto : Form
@@ -5,6 +7,15 @@ namespace PresentacionComprarProducto
         public ComprarProducto()
         {
             InitializeComponent();
+            ConexionSQL_Negocio conexionNegocio = new ConexionSQL_Negocio();
+            DataTable productos = conexionNegocio.verComprarProducto();
+            tablaProductos.DataSource = productos;
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

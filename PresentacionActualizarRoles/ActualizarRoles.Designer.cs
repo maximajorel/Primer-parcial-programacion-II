@@ -28,19 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            tablaUsuarios = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)tablaUsuarios).BeginInit();
             SuspendLayout();
+            // 
+            // tablaUsuarios
+            // 
+            tablaUsuarios.AllowUserToAddRows = false;
+            tablaUsuarios.AllowUserToDeleteRows = false;
+            tablaUsuarios.AllowUserToOrderColumns = true;
+            tablaUsuarios.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
+            tablaUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tablaUsuarios.EditMode = DataGridViewEditMode.EditProgrammatically;
+            tablaUsuarios.Location = new Point(12, 12);
+            tablaUsuarios.MultiSelect = false;
+            tablaUsuarios.Name = "tablaUsuarios";
+            tablaUsuarios.ReadOnly = true;
+            tablaUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            tablaUsuarios.Size = new Size(780, 324);
+            tablaUsuarios.TabIndex = 0;
+            tablaUsuarios.CellContentClick += tablaUsuarios_CellContentClick;
             // 
             // actualizarRoles
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(805, 538);
+            Controls.Add(tablaUsuarios);
             Name = "actualizarRoles";
             Text = "Actualizar Roles";
             Load += actualizarRoles_Load;
+            ((System.ComponentModel.ISupportInitialize)tablaUsuarios).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView tablaUsuarios;
     }
 }

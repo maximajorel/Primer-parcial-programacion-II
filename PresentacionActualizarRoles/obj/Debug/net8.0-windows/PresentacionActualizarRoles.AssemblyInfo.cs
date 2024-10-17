@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PresentacionActualizarRoles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b052ffce7f656cda389d758af72a476e3aebe80a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1932b132862c361c84f2db7d82c1af2245262d8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PresentacionActualizarRoles")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PresentacionActualizarRoles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

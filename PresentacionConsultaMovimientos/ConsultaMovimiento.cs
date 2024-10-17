@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
 
 namespace PresentacionConsultaMovimientos
 {
@@ -19,7 +20,14 @@ namespace PresentacionConsultaMovimientos
 
         private void ConsultaMovimiento_Load(object sender, EventArgs e)
         {
+            ConexionSQL_Negocio verProductos = new ConexionSQL_Negocio();
+            DataTable prductos = verProductos.verDetalleCompletoProductos();
+            tablaProductos.DataSource = prductos;
+        }
 
+        private void tablaProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
