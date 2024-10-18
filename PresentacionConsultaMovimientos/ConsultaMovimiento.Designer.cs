@@ -47,6 +47,8 @@
             textBoxPorcentajeGanancia = new TextBox();
             botonAgregarProducto = new Button();
             botonLimpiarCampos = new Button();
+            buttonEditarProducto = new Button();
+            botonEliminarProducto = new Button();
             ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
             SuspendLayout();
             // 
@@ -219,11 +221,33 @@
             botonLimpiarCampos.UseVisualStyleBackColor = true;
             botonLimpiarCampos.Click += botonLimpiarCampos_Click;
             // 
+            // buttonEditarProducto
+            // 
+            buttonEditarProducto.Location = new Point(793, 404);
+            buttonEditarProducto.Name = "buttonEditarProducto";
+            buttonEditarProducto.Size = new Size(160, 68);
+            buttonEditarProducto.TabIndex = 23;
+            buttonEditarProducto.Text = "Editar Producto";
+            buttonEditarProducto.UseVisualStyleBackColor = true;
+            buttonEditarProducto.Click += button1_Click;
+            // 
+            // botonEliminarProducto
+            // 
+            botonEliminarProducto.Location = new Point(793, 478);
+            botonEliminarProducto.Name = "botonEliminarProducto";
+            botonEliminarProducto.Size = new Size(160, 68);
+            botonEliminarProducto.TabIndex = 24;
+            botonEliminarProducto.Text = "Eliminar Producto";
+            botonEliminarProducto.UseVisualStyleBackColor = true;
+            botonEliminarProducto.Click += botonEliminarProducto_Click;
+            // 
             // ConsultaMovimiento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(965, 687);
+            ClientSize = new Size(965, 610);
+            Controls.Add(botonEliminarProducto);
+            Controls.Add(buttonEditarProducto);
             Controls.Add(botonLimpiarCampos);
             Controls.Add(botonAgregarProducto);
             Controls.Add(textBoxPorcentajeGanancia);
@@ -272,5 +296,7 @@
         private TextBox textBoxPorcentajeGanancia;
         private Button botonAgregarProducto;
         private Button botonLimpiarCampos;
+        private Button buttonEditarProducto;
+        private Button botonEliminarProducto;
     }
 }

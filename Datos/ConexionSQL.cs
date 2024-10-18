@@ -128,7 +128,27 @@ namespace Datos
             comando.ExecuteNonQuery();
             conexion.Close();
         }
-    }
 
+        // Editar producto
+        public void editarProducto(string id, string codigo, string nombreProducto, string nombreCorto, string precioCosto, string stock, string stockMinimo, string porcentajeGanancia)
+        {
+            conexion.Open();
+            string consulta = $"update Producto set Codigo = '{codigo}', NombreProducto = '{nombreProducto}', NombreCorto = '{nombreCorto}', PrecioCosto = '{precioCosto}', Stock = '{stock}', StockMinimo = '{stockMinimo}', PorcentajeGanancia = '{porcentajeGanancia}' where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+
+        // Eliminar producto
+        public void eliminarProducto(string id)
+        {
+            conexion.Open();
+            string consulta = $"delete from Producto where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+
+    }
 
 }

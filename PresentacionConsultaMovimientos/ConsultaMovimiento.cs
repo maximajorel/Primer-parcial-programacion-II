@@ -17,7 +17,19 @@ namespace PresentacionConsultaMovimientos
         {
             InitializeComponent();
         }
+        public void limpiarCampos()
+        {
 
+            // Limpiar los campos
+            textboxID.Text = "";
+            textboxCodigoProducto.Text = "";
+            textBoxNombreProducto.Text = "";
+            textBoxNombreCortoProducto.Text = "";
+            textBoxPrecioCosto.Text = "";
+            textboxStockActual.Text = "";
+            textBoxStockMinimo.Text = "";
+            textBoxPorcentajeGanancia.Text = "";
+        }
         public void actualizarTabla()
         {
             ConexionSQL_Negocio verProductos = new ConexionSQL_Negocio();
@@ -42,18 +54,19 @@ namespace PresentacionConsultaMovimientos
             agregarProducto.agregarProducto(textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, textboxStockActual.Text, textBoxStockMinimo.Text, textBoxPorcentajeGanancia.Text);
             MessageBox.Show("Producto agregado correctamente");
             actualizarTabla();
+            limpiarCampos();
         }
 
         private void tablaProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Rellenar los campos con los datos de la fila seleccionada
+            // Rellenar los campos con los datos de la fila seleccionada            
             textboxID.Text = tablaProductos.SelectedCells[0].Value.ToString();
             textboxCodigoProducto.Text = tablaProductos.SelectedCells[1].Value.ToString();
             textBoxNombreProducto.Text = tablaProductos.SelectedCells[2].Value.ToString();
             textBoxNombreCortoProducto.Text = tablaProductos.SelectedCells[3].Value.ToString();
-            textBoxPrecioCosto.Text = tablaProductos.SelectedCells[4].Value.ToString();
-            textboxStockActual.Text = tablaProductos.SelectedCells[5].Value.ToString();
-            textBoxStockMinimo.Text = tablaProductos.SelectedCells[6].Value.ToString();
+            textBoxPrecioCosto.Text = tablaProductos.SelectedCells[4].Value.ToString().Replace(",", ".");
+            textboxStockActual.Text = tablaProductos.SelectedCells[5].Value.ToString().Replace(",", ".");
+            textBoxStockMinimo.Text = tablaProductos.SelectedCells[6].Value.ToString().Replace(",", ".");
             textBoxPorcentajeGanancia.Text = tablaProductos.SelectedCells[7].Value.ToString();
 
 
@@ -62,15 +75,30 @@ namespace PresentacionConsultaMovimientos
 
         private void botonLimpiarCampos_Click(object sender, EventArgs e)
         {
-            // Limpiar los campos
-            textboxID.Text = "";
-            textboxCodigoProducto.Text = "";
-            textBoxNombreProducto.Text = "";
-            textBoxNombreCortoProducto.Text = "";
-            textBoxPrecioCosto.Text = "";
-            textboxStockActual.Text = "";
-            textBoxStockMinimo.Text = "";
-            textBoxPorcentajeGanancia.Text = "";
+            limpiarCampos();
+        }
+
+
+        // Editar producto
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConexionSQL_Negocio editarProducto = new ConexionSQL_Negocio();
+            editarProducto.editarProducto(textboxID.Text, textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, textboxStockActual.Text, textBoxStockMinimo.Text, textBoxPorcentajeGanancia.Text);
+            MessageBox.Show("Producto editado correctamente");
+            actualizarTabla();
+            limpiarCampos();
+
+
+        }
+
+        private void botonEliminarProducto_Click(object sender, EventArgs e)
+        {
+            ConexionSQL_Negocio eliminarProducto = new ConexionSQL_Negocio();
+            eliminarProducto.eliminarProducto(textboxID.Text);        
+            MessageBox.Show("Producto eliminado correctamente");
+            actualizarTabla();
+            limpiarCampos();
+
         }
     }
 }

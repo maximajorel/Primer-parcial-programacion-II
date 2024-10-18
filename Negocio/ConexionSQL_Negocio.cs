@@ -50,5 +50,14 @@ namespace Negocio
         public void agregarProducto(string codigo, string nombreProducto, string nombreCorto, string precioCosto, string stock, string stockMinimo, string porcentajeGanancia) { 
             conexion.agregarProducto(codigo, nombreProducto, nombreCorto, precioCosto, stock, stockMinimo, porcentajeGanancia);
         }
+      
+        public void editarProducto(string id, string codigo, string nombreProducto, string nombreCorto, string precioCosto, string stock, string stockMinimo, string porcentajeGanancia)
+        {
+            conexion.editarProducto(id, codigo, nombreProducto, nombreCorto, precioCosto, stock, stockMinimo, porcentajeGanancia);
+        }
+
+        public void eliminarProducto(string id) { 
+            conexion.eliminarProducto(id);
+        }
     }
 }
