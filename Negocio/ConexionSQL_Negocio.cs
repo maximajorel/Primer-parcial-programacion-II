@@ -47,5 +47,8 @@ namespace Negocio
             conexion.editarUsuario(id, apellido, nombre, telefono, fechaNac, usuario, contraseña, rol);
         }
 
+        public void agregarProducto(string codigo, string nombreProducto, string nombreCorto, string precioCosto, string stock, string stockMinimo, string porcentajeGanancia) { 
+            conexion.agregarProducto(codigo, nombreProducto, nombreCorto, precioCosto, stock, stockMinimo, porcentajeGanancia);
+        }
     }
 }

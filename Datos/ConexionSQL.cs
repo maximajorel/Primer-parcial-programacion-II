@@ -119,6 +119,15 @@ namespace Datos
             conexion.Close();
         }
 
+        // Funcion para agregar producto
+        public void agregarProducto(string codigo, string nombreProducto, string nombreCorto, string precioCosto, string stock, string stockMinimo, string porcentajeGanancia)
+        {
+            conexion.Open();
+            string consulta = $"insert into Producto (Codigo, NombreProducto, NombreCorto, PrecioCosto, Stock, StockMinimo, PorcentajeGanancia) values ('{codigo}', '{nombreProducto}', '{nombreCorto}', '{precioCosto}', '{stock}', '{stockMinimo}', '{porcentajeGanancia}');";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
     }
 
 
