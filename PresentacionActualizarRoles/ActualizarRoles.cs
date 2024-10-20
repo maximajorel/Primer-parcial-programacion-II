@@ -1,0 +1,107 @@
+using System.Data;
+using Negocio;
+
+namespace PresentacionActualizarRoles
+{
+    public partial class actualizarRoles : Form
+    {
+        private ConexionSQL_Negocio consultaUsuarios;
+          
+        public actualizarRoles()
+        {
+            InitializeComponent();
+
+        }
+
+        public void LimpiarCajas()
+        {
+            textboxID.Text = "";
+            textboxApellido.Text = "";
+            textboxNombre.Text = "";
+            textboxTelefono.Text = "";
+            calendarioFechaNac.Text = "";
+            textboxUsuario.Text = "";
+            textboxContraseña.Text = "";
+            comboboxRolUsuario.Text = "";
+        }
+        // Funcion para actualizar tablaUsuarios
+
+        public void actualizarDatos()
+        {
+            ConexionSQL_Negocio consultaUsuarios = new ConexionSQL_Negocio(); ;
+            DataTable usuarios = consultaUsuarios.verUsuarios();
+            tablaUsuarios.DataSource = usuarios;
+        }
+        private void actualizarRoles_Load(object sender, EventArgs e)
+
+        {
+            actualizarDatos();
+        }
+
+        private void tablaUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tablaUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textboxID.Text = tablaUsuarios.SelectedCells[0].Value.ToString();
+            textboxApellido.Text = tablaUsuarios.SelectedCells[1].Value.ToString();
+            textboxNombre.Text = tablaUsuarios.SelectedCells[2].Value.ToString();
+            textboxTelefono.Text = tablaUsuarios.SelectedCells[3].Value.ToString();
+            calendarioFechaNac.Text = tablaUsuarios.SelectedCells[4].Value.ToString();
+            textboxUsuario.Text = tablaUsuarios.SelectedCells[5].Value.ToString();
+            textboxContraseña.Text = tablaUsuarios.SelectedCells[6].Value.ToString();
+            comboboxRolUsuario.Text = tablaUsuarios.SelectedCells[7].Value.ToString();
+        }
+
+        private void botonLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            LimpiarCajas();
+        }
+
+        private void botonAgregarUsuario_Click(object sender, EventArgs e)
+        {
+
+            ConexionSQL_Negocio agregarUsuario = new ConexionSQL_Negocio();
+
+            string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
+
+
+            agregarUsuario.agregarUsuario(textboxApellido.Text, textboxNombre.Text, textboxTelefono.Text, fechaNac, textboxUsuario.Text, textboxContraseña.Text, comboboxRolUsuario.Text);
+            LimpiarCajas();
+            actualizarDatos();
+            // Mostrar mensaje de tarea realizada con exito
+
+            MessageBox.Show("Usuario agregado con exito");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Eliminar usuario
+            ConexionSQL_Negocio eliminarUsuario = new ConexionSQL_Negocio();
+            eliminarUsuario.eliminarUsuario(textboxID.Text);
+            LimpiarCajas();
+            actualizarDatos();
+            MessageBox.Show("Usuario eliminado con exito");
+
+        }
+
+        private void botonEditarUsuario_Click(object sender, EventArgs e)
+        {
+            // Editar usuario
+            ConexionSQL_Negocio editarUsuario = new ConexionSQL_Negocio();
+            string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
+            editarUsuario.editarUsuario(textboxID.Text, textboxApellido.Text, textboxNombre.Text, textboxTelefono.Text, fechaNac, textboxUsuario.Text, textboxContraseña.Text, comboboxRolUsuario.Text);
+            LimpiarCajas();
+            actualizarDatos();
+            MessageBox.Show("Usuario editado con exito");
+        }
+
+        private void botonVolverMenuPrincipal_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
