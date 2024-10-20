@@ -17,29 +17,47 @@ namespace MenuPrincipal
             rol = verificarRol.verificarRol(usuario, contraseña);
 
         }
-
+        
         // Habilitar o deshabilitar botones segun su rol
 
         public void validarRoles() {
             if (rol == "Operador")
             {
-
+                labelRolUsuarioDinamico.Text = "Operador";
                 botonActualizacionEmpleados.Enabled = false;
                 botonConsultaMovimientos.Enabled = false;
 
             }
             else if (rol == "Auditor")
             {
+                labelRolUsuarioDinamico.Text = "Auditor";
                 botonActualizacionEmpleados.Enabled = false;
             }
-            else { 
+            else if ( rol == "Administrador" )
+            {
+                labelRolUsuarioDinamico.Text = "Administrador";
+                botonActualizacionEmpleados.Enabled = true;
+                botonCompraProducto.Enabled = true;
+                botonConsultaMovimientos.Enabled = true;
+                botonVentaDeProductos.Enabled = true;
+            }
+            else {
+                labelRolUsuarioDinamico.Text = "No tiene rol asignado, contactese con el administrador";
                 botonActualizacionEmpleados.Enabled = false;
                 botonCompraProducto.Enabled = false;
                 botonConsultaMovimientos.Enabled = false;
                 botonVentaDeProductos.Enabled = false;
             }
         }
+        public void obtenerNombre() { 
+            
+            ConexionSQL_Negocio obtenernombre = new ConexionSQL_Negocio();
+            string usuario = "Anonimo";
+            usuario = obtenernombre.nombreyApellido(this.usuario, this.contraseña);
+            labelUsuarioDinamico.Text = usuario;
 
+
+        }
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -53,6 +71,7 @@ namespace MenuPrincipal
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
+            obtenerNombre();
             verificarRol();
             validarRoles();
         }

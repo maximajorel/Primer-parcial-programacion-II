@@ -120,7 +120,7 @@ namespace Datos
             conexion.Close();
         }
 
-        // Verificar contenido de columna rolEmpleado segun  coincidencia de busqueda en Usuario && Clave en la tabla Empleado
+        // Verificar rol
 
         public string verificarRol(string usuario, string contraseña)
         {
@@ -139,6 +139,31 @@ namespace Datos
                 Console.WriteLine("No se encontró el rol");
             }
             return rol;
+        }
+
+        // Traer nombre y apellido del empleado segun usuario y clave
+
+        public string traerNombreApellido(string usuario, string contraseña)
+        {
+            string nombreApellido = "";
+            try
+            {
+                conexion.Open();
+                string consulta = $"select Nombre, Apellido from Empleado where Usuario = '{usuario}' and Clave = '{contraseña}'";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    nombreApellido = reader["Nombre"].ToString() + " " + reader["Apellido"].ToString();
+                }
+                conexion.Close();
+            }
+            catch
+            {
+                // Mensaje de error
+                Console.WriteLine("No se encontró el nombre y apellido");
+            }
+            return nombreApellido;
         }
 
 

@@ -33,11 +33,15 @@
             botonCompraProducto = new Button();
             botonVentaDeProductos = new Button();
             botonConsultaMovimientos = new Button();
+            labelBienvenidaEstatico = new Label();
+            label1 = new Label();
+            labelRolUsuarioDinamico = new Label();
+            labelUsuarioDinamico = new Label();
             SuspendLayout();
             // 
             // BotonSalir
             // 
-            BotonSalir.Location = new Point(643, 415);
+            BotonSalir.Location = new Point(483, 286);
             BotonSalir.Name = "BotonSalir";
             BotonSalir.Size = new Size(145, 23);
             BotonSalir.TabIndex = 1;
@@ -47,7 +51,7 @@
             // 
             // botonActualizacionEmpleados
             // 
-            botonActualizacionEmpleados.Location = new Point(88, 130);
+            botonActualizacionEmpleados.Location = new Point(49, 121);
             botonActualizacionEmpleados.Name = "botonActualizacionEmpleados";
             botonActualizacionEmpleados.Size = new Size(189, 116);
             botonActualizacionEmpleados.TabIndex = 2;
@@ -57,7 +61,7 @@
             // 
             // botonCompraProducto
             // 
-            botonCompraProducto.Location = new Point(283, 130);
+            botonCompraProducto.Location = new Point(244, 121);
             botonCompraProducto.Name = "botonCompraProducto";
             botonCompraProducto.Size = new Size(189, 116);
             botonCompraProducto.TabIndex = 3;
@@ -67,7 +71,7 @@
             // 
             // botonVentaDeProductos
             // 
-            botonVentaDeProductos.Location = new Point(478, 130);
+            botonVentaDeProductos.Location = new Point(439, 121);
             botonVentaDeProductos.Name = "botonVentaDeProductos";
             botonVentaDeProductos.Size = new Size(189, 116);
             botonVentaDeProductos.TabIndex = 4;
@@ -77,7 +81,7 @@
             // 
             // botonConsultaMovimientos
             // 
-            botonConsultaMovimientos.Location = new Point(88, 252);
+            botonConsultaMovimientos.Location = new Point(49, 243);
             botonConsultaMovimientos.Name = "botonConsultaMovimientos";
             botonConsultaMovimientos.RightToLeft = RightToLeft.No;
             botonConsultaMovimientos.Size = new Size(579, 37);
@@ -86,11 +90,53 @@
             botonConsultaMovimientos.UseVisualStyleBackColor = true;
             botonConsultaMovimientos.Click += botonConsultaMovimientos_Click;
             // 
+            // labelBienvenidaEstatico
+            // 
+            labelBienvenidaEstatico.AutoSize = true;
+            labelBienvenidaEstatico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelBienvenidaEstatico.Location = new Point(96, 33);
+            labelBienvenidaEstatico.Name = "labelBienvenidaEstatico";
+            labelBienvenidaEstatico.Size = new Size(262, 32);
+            labelBienvenidaEstatico.TabIndex = 6;
+            labelBienvenidaEstatico.Text = "Bienvenido de nuevo,";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
+            label1.Location = new Point(102, 65);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 13);
+            label1.TabIndex = 7;
+            label1.Text = "Rol de usuario:";
+            // 
+            // labelRolUsuarioDinamico
+            // 
+            labelRolUsuarioDinamico.AutoSize = true;
+            labelRolUsuarioDinamico.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
+            labelRolUsuarioDinamico.Location = new Point(185, 65);
+            labelRolUsuarioDinamico.Name = "labelRolUsuarioDinamico";
+            labelRolUsuarioDinamico.Size = new Size(0, 13);
+            labelRolUsuarioDinamico.TabIndex = 8;
+            // 
+            // labelUsuarioDinamico
+            // 
+            labelUsuarioDinamico.AutoSize = true;
+            labelUsuarioDinamico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelUsuarioDinamico.Location = new Point(352, 33);
+            labelUsuarioDinamico.Name = "labelUsuarioDinamico";
+            labelUsuarioDinamico.Size = new Size(0, 32);
+            labelUsuarioDinamico.TabIndex = 9;
+            // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(694, 342);
+            Controls.Add(labelUsuarioDinamico);
+            Controls.Add(labelRolUsuarioDinamico);
+            Controls.Add(label1);
+            Controls.Add(labelBienvenidaEstatico);
             Controls.Add(botonConsultaMovimientos);
             Controls.Add(botonVentaDeProductos);
             Controls.Add(botonCompraProducto);
@@ -100,6 +146,7 @@
             Text = "Menú Principal";
             Load += MenuPrincipal_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -108,5 +155,9 @@
         private Button botonCompraProducto;
         private Button botonVentaDeProductos;
         private Button botonConsultaMovimientos;
+        private Label labelBienvenidaEstatico;
+        private Label label1;
+        private Label labelRolUsuarioDinamico;
+        private Label labelUsuarioDinamico;
     }
 }

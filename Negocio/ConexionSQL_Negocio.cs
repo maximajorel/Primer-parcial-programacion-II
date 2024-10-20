@@ -63,7 +63,10 @@ namespace Negocio
         {
             return conexion.verificarRol(usuario, contraseña);
         }
-
+        public string nombreyApellido(string usuario, string contraseña)
+        {
+             return conexion.traerNombreApellido(usuario, contraseña);
+        }
 
 
 
