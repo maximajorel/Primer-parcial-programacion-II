@@ -59,5 +59,25 @@ namespace Negocio
         public void eliminarProducto(string id) { 
             conexion.eliminarProducto(id);
         }
+        public string verificarRol(string usuario, string contraseña)
+        {
+            return conexion.verificarRol(usuario, contraseña);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
 }

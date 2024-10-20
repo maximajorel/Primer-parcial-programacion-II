@@ -104,6 +104,7 @@
             Controls.Add(labelIniciarSesion);
             Name = "IniciarSesion";
             Text = "Form1";
+            Load += IniciarSesion_Load;
             ResumeLayout(false);
             PerformLayout();
         }

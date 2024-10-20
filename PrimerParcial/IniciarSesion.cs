@@ -22,6 +22,8 @@ namespace PrimerParcial
             if (conexion.iniciarSesion(textboxUsuario.Text, textBoxContraseña.Text) == 1)
             {
                 MenuPrincipal.MenuPrincipal menu = new MenuPrincipal.MenuPrincipal();
+                menu.usuario = textboxUsuario.Text;
+                menu.contraseña = textBoxContraseña.Text;
                 menu.Show();
                 this.Hide();
             }
@@ -32,6 +34,11 @@ namespace PrimerParcial
         }
 
         private void textboxUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IniciarSesion_Load(object sender, EventArgs e)
         {
 
         }

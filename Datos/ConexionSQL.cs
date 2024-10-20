@@ -11,6 +11,7 @@ using Microsoft.Data.SqlClient;
 using System.Runtime.CompilerServices;
 
 
+
 namespace Datos
 {
     public class ConexionSql
@@ -118,6 +119,29 @@ namespace Datos
             comando.ExecuteNonQuery();
             conexion.Close();
         }
+
+        // Verificar contenido de columna rolEmpleado segun  coincidencia de busqueda en Usuario && Clave en la tabla Empleado
+
+        public string verificarRol(string usuario, string contraseña)
+        {
+            string rol = "";
+            try
+            {
+                conexion.Open();
+                string consulta = $"select rolEmpleado from Empleado where Usuario = '{usuario}' and Clave = '{contraseña}'";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                rol = comando.ExecuteScalar()?.ToString() ?? "";                
+                conexion.Close();
+            }
+            catch
+            {
+                // Mensaje de error
+                Console.WriteLine("No se encontró el rol");
+            }
+            return rol;
+        }
+
+
 
         // Funcion para agregar producto
         public void agregarProducto(string codigo, string nombreProducto, string nombreCorto, string precioCosto, string stock, string stockMinimo, string porcentajeGanancia)

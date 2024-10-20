@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentacion_Login", "PrimerParcial\Presentacion_Login.csproj", "{E95BEE4A-DEE5-49B8-85FC-64CCB0A5880B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F96C9BF-5592-4DFC-A224-2685A7F0FBA3} = {6F96C9BF-5592-4DFC-A224-2685A7F0FBA3}
+		{98CAE382-EBF0-4993-AF7E-908CDD6E5778} = {98CAE382-EBF0-4993-AF7E-908CDD6E5778}
+		{A56BA26F-27FC-46A9-956D-9909645D5C8B} = {A56BA26F-27FC-46A9-956D-9909645D5C8B}
+		{AA25FBB6-F1A2-4CDC-9E68-349114909BF2} = {AA25FBB6-F1A2-4CDC-9E68-349114909BF2}
+		{D28915F3-1213-4C11-A5CA-CFBE2702EBD2} = {D28915F3-1213-4C11-A5CA-CFBE2702EBD2}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datos", "Datos\Datos.csproj", "{6F96C9BF-5592-4DFC-A224-2685A7F0FBA3}"
 EndProject
@@ -14,13 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MenuPrincipal", "MenuPrinci
 		{2BB1D0EB-BF16-4106-8570-69AD6CEDBF70} = {2BB1D0EB-BF16-4106-8570-69AD6CEDBF70}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionActualizarRoles", "PresentacionActualizarRoles\PresentacionActualizarRoles.csproj", "{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentacionActualizarRoles", "PresentacionActualizarRoles\PresentacionActualizarRoles.csproj", "{AA25FBB6-F1A2-4CDC-9E68-349114909BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionComprarProducto", "PresentacionComprarProducto\PresentacionComprarProducto.csproj", "{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentacionComprarProducto", "PresentacionComprarProducto\PresentacionComprarProducto.csproj", "{D28915F3-1213-4C11-A5CA-CFBE2702EBD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionVenderProducto", "PresentacionVenderProducto\PresentacionVenderProducto.csproj", "{A56BA26F-27FC-46A9-956D-9909645D5C8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentacionVenderProducto", "PresentacionVenderProducto\PresentacionVenderProducto.csproj", "{A56BA26F-27FC-46A9-956D-9909645D5C8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentacionConsultaMovimientos", "PresentacionConsultaMovimientos\PresentacionConsultaMovimientos.csproj", "{98CAE382-EBF0-4993-AF7E-908CDD6E5778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentacionConsultaMovimientos", "PresentacionConsultaMovimientos\PresentacionConsultaMovimientos.csproj", "{98CAE382-EBF0-4993-AF7E-908CDD6E5778}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
