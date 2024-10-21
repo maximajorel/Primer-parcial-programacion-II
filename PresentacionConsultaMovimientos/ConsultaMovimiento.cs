@@ -26,9 +26,9 @@ namespace PresentacionConsultaMovimientos
             textBoxNombreProducto.Text = "";
             textBoxNombreCortoProducto.Text = "";
             textBoxPrecioCosto.Text = "";
-            textboxStockActual.Text = "";
-            textBoxStockMinimo.Text = "";
-            textBoxPorcentajeGanancia.Text = "";
+            numericStockActual.Text = "";
+            numericStockMinimo.Text = "";
+            numericPorcentajeGanancia.Text = "";
         }
         public void actualizarTabla()
         {
@@ -51,7 +51,7 @@ namespace PresentacionConsultaMovimientos
         {
             // Funcion para agregar producto
             ConexionSQL_Negocio agregarProducto = new ConexionSQL_Negocio();
-            agregarProducto.agregarProducto(textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, textboxStockActual.Text, textBoxStockMinimo.Text, textBoxPorcentajeGanancia.Text);
+            agregarProducto.agregarProducto(textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, numericStockActual.Text, numericStockMinimo.Text, numericPorcentajeGanancia.Text);
             MessageBox.Show("Producto agregado correctamente");
             actualizarTabla();
             limpiarCampos();
@@ -65,9 +65,9 @@ namespace PresentacionConsultaMovimientos
             textBoxNombreProducto.Text = tablaProductos.SelectedCells[2].Value.ToString();
             textBoxNombreCortoProducto.Text = tablaProductos.SelectedCells[3].Value.ToString();
             textBoxPrecioCosto.Text = tablaProductos.SelectedCells[4].Value.ToString().Replace(",", ".");
-            textboxStockActual.Text = tablaProductos.SelectedCells[5].Value.ToString().Replace(",", ".");
-            textBoxStockMinimo.Text = tablaProductos.SelectedCells[6].Value.ToString().Replace(",", ".");
-            textBoxPorcentajeGanancia.Text = tablaProductos.SelectedCells[7].Value.ToString();
+            numericStockActual.Text = tablaProductos.SelectedCells[5].Value.ToString().Replace(",", ".");
+            numericStockMinimo.Text = tablaProductos.SelectedCells[6].Value.ToString().Replace(",", ".");
+            numericPorcentajeGanancia.Text = tablaProductos.SelectedCells[7].Value.ToString();
 
 
 
@@ -89,7 +89,7 @@ namespace PresentacionConsultaMovimientos
             }
             else {
                 ConexionSQL_Negocio editarProducto = new ConexionSQL_Negocio();
-                editarProducto.editarProducto(textboxID.Text, textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, textboxStockActual.Text, textBoxStockMinimo.Text, textBoxPorcentajeGanancia.Text);
+                editarProducto.editarProducto(textboxID.Text, textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, numericStockActual.Text, numericStockMinimo.Text, numericPorcentajeGanancia.Text);
                 MessageBox.Show("Producto editado correctamente");
                 actualizarTabla();
                 limpiarCampos();

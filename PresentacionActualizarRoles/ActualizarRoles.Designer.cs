@@ -181,6 +181,7 @@
             textboxContraseña.Name = "textboxContraseña";
             textboxContraseña.Size = new Size(196, 23);
             textboxContraseña.TabIndex = 14;
+            textboxContraseña.UseSystemPasswordChar = true;
             // 
             // label2
             // 

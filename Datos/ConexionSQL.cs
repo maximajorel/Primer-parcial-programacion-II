@@ -264,7 +264,20 @@ namespace Datos
         }
 
 
-
-
+        // Obtener todos los nombre y apellido del empleado y guardarlo en una lista
+        public List<string> obtenerNombreApellidoEmpleado()
+        {
+            List<string> lista = new List<string>();
+            conexion.Open();
+            string consulta = "select Nombre, Apellido from Empleado";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                lista.Add(reader["Nombre"].ToString() + " " + reader["Apellido"].ToString());
+            }
+            conexion.Close();
+            return lista;
+        }
     }
 }

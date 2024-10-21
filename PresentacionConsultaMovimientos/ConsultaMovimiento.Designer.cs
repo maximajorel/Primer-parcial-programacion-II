@@ -40,16 +40,19 @@
             labelPrecioCosto = new Label();
             textBoxPrecioCosto = new TextBox();
             labelStock = new Label();
-            textboxStockActual = new TextBox();
             labelStockMinimo = new Label();
-            textBoxStockMinimo = new TextBox();
             labelPorcentajeGanancia = new Label();
-            textBoxPorcentajeGanancia = new TextBox();
             botonAgregarProducto = new Button();
             botonLimpiarCampos = new Button();
             buttonEditarProducto = new Button();
             botonEliminarProducto = new Button();
+            numericPorcentajeGanancia = new NumericUpDown();
+            numericStockActual = new NumericUpDown();
+            numericStockMinimo = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericPorcentajeGanancia).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericStockActual).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericStockMinimo).BeginInit();
             SuspendLayout();
             // 
             // tablaProductos
@@ -79,6 +82,7 @@
             textboxID.Enabled = false;
             textboxID.Location = new Point(52, 330);
             textboxID.Name = "textboxID";
+            textboxID.ReadOnly = true;
             textboxID.Size = new Size(58, 23);
             textboxID.TabIndex = 3;
             // 
@@ -160,13 +164,6 @@
             labelStock.TabIndex = 13;
             labelStock.Text = "Stock Actual";
             // 
-            // textboxStockActual
-            // 
-            textboxStockActual.Location = new Point(147, 514);
-            textboxStockActual.Name = "textboxStockActual";
-            textboxStockActual.Size = new Size(212, 23);
-            textboxStockActual.TabIndex = 14;
-            // 
             // labelStockMinimo
             // 
             labelStockMinimo.AutoSize = true;
@@ -177,13 +174,6 @@
             labelStockMinimo.TabIndex = 15;
             labelStockMinimo.Text = "Stock Minimo";
             // 
-            // textBoxStockMinimo
-            // 
-            textBoxStockMinimo.Location = new Point(510, 514);
-            textBoxStockMinimo.Name = "textBoxStockMinimo";
-            textBoxStockMinimo.Size = new Size(266, 23);
-            textBoxStockMinimo.TabIndex = 16;
-            // 
             // labelPorcentajeGanancia
             // 
             labelPorcentajeGanancia.AutoSize = true;
@@ -193,13 +183,6 @@
             labelPorcentajeGanancia.Size = new Size(229, 30);
             labelPorcentajeGanancia.TabIndex = 17;
             labelPorcentajeGanancia.Text = "Porcentaje de ganancia";
-            // 
-            // textBoxPorcentajeGanancia
-            // 
-            textBoxPorcentajeGanancia.Location = new Point(590, 470);
-            textBoxPorcentajeGanancia.Name = "textBoxPorcentajeGanancia";
-            textBoxPorcentajeGanancia.Size = new Size(186, 23);
-            textBoxPorcentajeGanancia.TabIndex = 18;
             // 
             // botonAgregarProducto
             // 
@@ -241,20 +224,41 @@
             botonEliminarProducto.UseVisualStyleBackColor = true;
             botonEliminarProducto.Click += botonEliminarProducto_Click;
             // 
+            // numericPorcentajeGanancia
+            // 
+            numericPorcentajeGanancia.Location = new Point(600, 470);
+            numericPorcentajeGanancia.Name = "numericPorcentajeGanancia";
+            numericPorcentajeGanancia.Size = new Size(176, 23);
+            numericPorcentajeGanancia.TabIndex = 25;
+            // 
+            // numericStockActual
+            // 
+            numericStockActual.Location = new Point(147, 514);
+            numericStockActual.Name = "numericStockActual";
+            numericStockActual.Size = new Size(212, 23);
+            numericStockActual.TabIndex = 26;
+            // 
+            // numericStockMinimo
+            // 
+            numericStockMinimo.Location = new Point(510, 514);
+            numericStockMinimo.Name = "numericStockMinimo";
+            numericStockMinimo.Size = new Size(266, 23);
+            numericStockMinimo.TabIndex = 27;
+            // 
             // ConsultaMovimiento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(965, 610);
+            Controls.Add(numericStockMinimo);
+            Controls.Add(numericStockActual);
+            Controls.Add(numericPorcentajeGanancia);
             Controls.Add(botonEliminarProducto);
             Controls.Add(buttonEditarProducto);
             Controls.Add(botonLimpiarCampos);
             Controls.Add(botonAgregarProducto);
-            Controls.Add(textBoxPorcentajeGanancia);
             Controls.Add(labelPorcentajeGanancia);
-            Controls.Add(textBoxStockMinimo);
             Controls.Add(labelStockMinimo);
-            Controls.Add(textboxStockActual);
             Controls.Add(labelStock);
             Controls.Add(textBoxPrecioCosto);
             Controls.Add(labelPrecioCosto);
@@ -271,6 +275,9 @@
             Text = "Form1";
             Load += ConsultaMovimiento_Load;
             ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericPorcentajeGanancia).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericStockActual).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericStockMinimo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -289,14 +296,14 @@
         private Label labelPrecioCosto;
         private TextBox textBoxPrecioCosto;
         private Label labelStock;
-        private TextBox textboxStockActual;
         private Label labelStockMinimo;
-        private TextBox textBoxStockMinimo;
         private Label labelPorcentajeGanancia;
-        private TextBox textBoxPorcentajeGanancia;
         private Button botonAgregarProducto;
         private Button botonLimpiarCampos;
         private Button buttonEditarProducto;
         private Button botonEliminarProducto;
+        private NumericUpDown numericPorcentajeGanancia;
+        private NumericUpDown numericStockActual;
+        private NumericUpDown numericStockMinimo;
     }
 }

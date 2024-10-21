@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             tablaProductos = new DataGridView();
+            comboBoxEmpleados = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
             SuspendLayout();
             // 
@@ -41,14 +42,25 @@
             tablaProductos.TabIndex = 0;
             tablaProductos.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // comboBoxEmpleados
+            // 
+            comboBoxEmpleados.FormattingEnabled = true;
+            comboBoxEmpleados.Location = new Point(46, 252);
+            comboBoxEmpleados.Name = "comboBoxEmpleados";
+            comboBoxEmpleados.Size = new Size(236, 23);
+            comboBoxEmpleados.TabIndex = 1;
+            comboBoxEmpleados.Text = "Seleccione una opcion";
+            // 
             // ComprarProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(558, 554);
+            Controls.Add(comboBoxEmpleados);
             Controls.Add(tablaProductos);
             Name = "ComprarProducto";
             Text = "Comprar Producto";
+            Load += ComprarProducto_Load;
             ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
             ResumeLayout(false);
         }
@@ -56,5 +68,6 @@
         #endregion
 
         private DataGridView tablaProductos;
+        private ComboBox comboBoxEmpleados;
     }
 }

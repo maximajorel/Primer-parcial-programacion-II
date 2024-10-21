@@ -89,6 +89,12 @@ namespace Negocio
             conexion.eliminarCliente(id);
         }
 
+        // Obtener nombre y apellido de cliente
+        public List<String> obtenerNombresEmpleados() {
+
+            return conexion.obtenerNombreApellidoEmpleado();
+        
+        }
 
 
 

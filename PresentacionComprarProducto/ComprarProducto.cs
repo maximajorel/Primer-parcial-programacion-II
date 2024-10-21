@@ -17,5 +17,11 @@ namespace PresentacionComprarProducto
         {
 
         }
+
+        private void ComprarProducto_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -34,7 +34,7 @@
             botonVentaDeProductos = new Button();
             botonConsultaMovimientos = new Button();
             labelBienvenidaEstatico = new Label();
-            label1 = new Label();
+            labelTituloRolUsuario = new Label();
             labelRolUsuarioDinamico = new Label();
             labelUsuarioDinamico = new Label();
             buttonGestionarClientes = new Button();
@@ -43,7 +43,7 @@
             // 
             // BotonSalir
             // 
-            BotonSalir.Location = new Point(673, 460);
+            BotonSalir.Location = new Point(673, 421);
             BotonSalir.Name = "BotonSalir";
             BotonSalir.Size = new Size(145, 23);
             BotonSalir.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             // botonActualizacionEmpleados
             // 
-            botonActualizacionEmpleados.Location = new Point(44, 158);
+            botonActualizacionEmpleados.Location = new Point(44, 131);
             botonActualizacionEmpleados.Name = "botonActualizacionEmpleados";
             botonActualizacionEmpleados.Size = new Size(189, 116);
             botonActualizacionEmpleados.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             // botonCompraProducto
             // 
-            botonCompraProducto.Location = new Point(239, 158);
+            botonCompraProducto.Location = new Point(239, 131);
             botonCompraProducto.Name = "botonCompraProducto";
             botonCompraProducto.Size = new Size(189, 116);
             botonCompraProducto.TabIndex = 3;
@@ -73,7 +73,7 @@
             // 
             // botonVentaDeProductos
             // 
-            botonVentaDeProductos.Location = new Point(434, 158);
+            botonVentaDeProductos.Location = new Point(434, 131);
             botonVentaDeProductos.Name = "botonVentaDeProductos";
             botonVentaDeProductos.Size = new Size(189, 116);
             botonVentaDeProductos.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             // botonConsultaMovimientos
             // 
-            botonConsultaMovimientos.Location = new Point(629, 158);
+            botonConsultaMovimientos.Location = new Point(629, 131);
             botonConsultaMovimientos.Name = "botonConsultaMovimientos";
             botonConsultaMovimientos.RightToLeft = RightToLeft.No;
             botonConsultaMovimientos.Size = new Size(189, 116);
@@ -96,27 +96,27 @@
             // 
             labelBienvenidaEstatico.AutoSize = true;
             labelBienvenidaEstatico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelBienvenidaEstatico.Location = new Point(44, 67);
+            labelBienvenidaEstatico.Location = new Point(44, 35);
             labelBienvenidaEstatico.Name = "labelBienvenidaEstatico";
             labelBienvenidaEstatico.Size = new Size(262, 32);
             labelBienvenidaEstatico.TabIndex = 6;
             labelBienvenidaEstatico.Text = "Bienvenido de nuevo,";
             // 
-            // label1
+            // labelTituloRolUsuario
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
-            label1.Location = new Point(50, 99);
-            label1.Name = "label1";
-            label1.Size = new Size(83, 13);
-            label1.TabIndex = 7;
-            label1.Text = "Rol de usuario:";
+            labelTituloRolUsuario.AutoSize = true;
+            labelTituloRolUsuario.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
+            labelTituloRolUsuario.Location = new Point(50, 67);
+            labelTituloRolUsuario.Name = "labelTituloRolUsuario";
+            labelTituloRolUsuario.Size = new Size(83, 13);
+            labelTituloRolUsuario.TabIndex = 7;
+            labelTituloRolUsuario.Text = "Rol de usuario:";
             // 
             // labelRolUsuarioDinamico
             // 
             labelRolUsuarioDinamico.AutoSize = true;
             labelRolUsuarioDinamico.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
-            labelRolUsuarioDinamico.Location = new Point(133, 99);
+            labelRolUsuarioDinamico.Location = new Point(133, 67);
             labelRolUsuarioDinamico.Name = "labelRolUsuarioDinamico";
             labelRolUsuarioDinamico.Size = new Size(0, 13);
             labelRolUsuarioDinamico.TabIndex = 8;
@@ -125,14 +125,14 @@
             // 
             labelUsuarioDinamico.AutoSize = true;
             labelUsuarioDinamico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelUsuarioDinamico.Location = new Point(300, 67);
+            labelUsuarioDinamico.Location = new Point(302, 35);
             labelUsuarioDinamico.Name = "labelUsuarioDinamico";
             labelUsuarioDinamico.Size = new Size(0, 32);
             labelUsuarioDinamico.TabIndex = 9;
             // 
             // buttonGestionarClientes
             // 
-            buttonGestionarClientes.Location = new Point(239, 280);
+            buttonGestionarClientes.Location = new Point(239, 253);
             buttonGestionarClientes.Name = "buttonGestionarClientes";
             buttonGestionarClientes.RightToLeft = RightToLeft.No;
             buttonGestionarClientes.Size = new Size(189, 116);
@@ -143,7 +143,7 @@
             // 
             // buttonVerComprobantes
             // 
-            buttonVerComprobantes.Location = new Point(434, 280);
+            buttonVerComprobantes.Location = new Point(434, 253);
             buttonVerComprobantes.Name = "buttonVerComprobantes";
             buttonVerComprobantes.RightToLeft = RightToLeft.No;
             buttonVerComprobantes.Size = new Size(189, 116);
@@ -157,12 +157,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(868, 547);
+            ClientSize = new Size(868, 477);
             Controls.Add(buttonVerComprobantes);
             Controls.Add(buttonGestionarClientes);
             Controls.Add(labelUsuarioDinamico);
             Controls.Add(labelRolUsuarioDinamico);
-            Controls.Add(label1);
+            Controls.Add(labelTituloRolUsuario);
             Controls.Add(labelBienvenidaEstatico);
             Controls.Add(botonConsultaMovimientos);
             Controls.Add(botonVentaDeProductos);
@@ -183,7 +183,7 @@
         private Button botonVentaDeProductos;
         private Button botonConsultaMovimientos;
         private Label labelBienvenidaEstatico;
-        private Label label1;
+        private Label labelTituloRolUsuario;
         private Label labelRolUsuarioDinamico;
         private Label labelUsuarioDinamico;
         private Button buttonGestionarClientes;
