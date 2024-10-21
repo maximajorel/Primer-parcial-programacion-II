@@ -36,16 +36,16 @@
             // tablaProductos
             // 
             tablaProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tablaProductos.Location = new Point(288, 12);
+            tablaProductos.Location = new Point(12, 12);
             tablaProductos.Name = "tablaProductos";
-            tablaProductos.Size = new Size(258, 263);
+            tablaProductos.Size = new Size(534, 263);
             tablaProductos.TabIndex = 0;
             tablaProductos.CellContentClick += dataGridView1_CellContentClick;
             // 
             // comboBoxEmpleados
             // 
             comboBoxEmpleados.FormattingEnabled = true;
-            comboBoxEmpleados.Location = new Point(46, 252);
+            comboBoxEmpleados.Location = new Point(112, 355);
             comboBoxEmpleados.Name = "comboBoxEmpleados";
             comboBoxEmpleados.Size = new Size(236, 23);
             comboBoxEmpleados.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(558, 554);
+            ClientSize = new Size(1139, 554);
             Controls.Add(comboBoxEmpleados);
             Controls.Add(tablaProductos);
             Name = "ComprarProducto";
