@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PresentacionConsultaMovimientos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda6a45ea4ada5b0409e75494686478e7b42a949")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+054f112baddef93c6f0923fbb460309e68bbf735")]
 [assembly: System.Reflection.AssemblyProductAttribute("PresentacionConsultaMovimientos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PresentacionConsultaMovimientos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

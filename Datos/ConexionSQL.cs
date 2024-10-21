@@ -16,7 +16,7 @@ namespace Datos
 {
     public class ConexionSql
     {
-        static string stringConexion = "server= MAXIPC\\PROGRAMACIONII;database= primerparcial;integrated security =true;TrustServerCertificate=True;";
+        static string stringConexion = "server= NOTEBOOK-MAXI\\SQLEXPRESS;database= primerparcial;integrated security =true;TrustServerCertificate=True;";
         SqlConnection conexion = new SqlConnection(stringConexion);
 
         // Funcion para consultar login
@@ -275,6 +275,22 @@ namespace Datos
             while (reader.Read())
             {
                 lista.Add(reader["Nombre"].ToString() + " " + reader["Apellido"].ToString());
+            }
+            conexion.Close();
+            return lista;
+        }
+
+        // Obtener todos los Apellido y Nombre de Cliente
+        public List<string> obtenerNombreApellidoCliente()
+        {
+            List<string> lista = new List<string>();
+            conexion.Open();
+            string consulta = "select Nombre, Apellido from Cliente";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                lista.Add(reader["Apellido"].ToString() + " " + reader["Nombre"].ToString());
             }
             conexion.Close();
             return lista;
