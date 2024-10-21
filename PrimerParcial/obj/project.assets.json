@@ -606,7 +606,9 @@
           "PresentacionActualizarRoles": "1.0.0",
           "PresentacionComprarProducto": "1.0.0",
           "PresentacionConsultaMovimientos": "1.0.0",
-          "PresentacionVenderProducto": "1.0.0"
+          "PresentacionVenderProducto": "1.0.0",
+          "Presentacion_AgregarCliente": "1.0.0",
+          "Presentacion_VerComprobantes": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MenuPrincipal.dll": {}
@@ -691,6 +693,38 @@
         },
         "runtime": {
           "bin/placeholder/PresentacionVenderProducto.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "Presentacion_AgregarCliente/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Presentacion_AgregarCliente.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Presentacion_AgregarCliente.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "Presentacion_VerComprobantes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Presentacion_VerComprobantes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Presentacion_VerComprobantes.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
@@ -1824,6 +1858,16 @@
       "type": "project",
       "path": "../PresentacionVenderProducto/PresentacionVenderProducto.csproj",
       "msbuildProject": "../PresentacionVenderProducto/PresentacionVenderProducto.csproj"
+    },
+    "Presentacion_AgregarCliente/1.0.0": {
+      "type": "project",
+      "path": "../Presentacion_AgregarCliente/Presentacion_AgregarCliente.csproj",
+      "msbuildProject": "../Presentacion_AgregarCliente/Presentacion_AgregarCliente.csproj"
+    },
+    "Presentacion_VerComprobantes/1.0.0": {
+      "type": "project",
+      "path": "../Presentacion_VerComprobantes/Presentacion_VerComprobantes.csproj",
+      "msbuildProject": "../Presentacion_VerComprobantes/Presentacion_VerComprobantes.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -82,22 +82,39 @@ namespace PresentacionConsultaMovimientos
         // Editar producto
         private void button1_Click(object sender, EventArgs e)
         {
-            ConexionSQL_Negocio editarProducto = new ConexionSQL_Negocio();
-            editarProducto.editarProducto(textboxID.Text, textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, textboxStockActual.Text, textBoxStockMinimo.Text, textBoxPorcentajeGanancia.Text);
-            MessageBox.Show("Producto editado correctamente");
-            actualizarTabla();
-            limpiarCampos();
+
+            if (textboxID.Text == "")
+            {
+                MessageBox.Show("Seleccione un producto para editar");
+            }
+            else {
+                ConexionSQL_Negocio editarProducto = new ConexionSQL_Negocio();
+                editarProducto.editarProducto(textboxID.Text, textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, textboxStockActual.Text, textBoxStockMinimo.Text, textBoxPorcentajeGanancia.Text);
+                MessageBox.Show("Producto editado correctamente");
+                actualizarTabla();
+                limpiarCampos();
+            }
+
 
 
         }
 
         private void botonEliminarProducto_Click(object sender, EventArgs e)
         {
-            ConexionSQL_Negocio eliminarProducto = new ConexionSQL_Negocio();
-            eliminarProducto.eliminarProducto(textboxID.Text);        
-            MessageBox.Show("Producto eliminado correctamente");
-            actualizarTabla();
-            limpiarCampos();
+
+            if (textboxID.Text == "")
+            {
+                MessageBox.Show("Seleccione un producto para editar");
+            }
+            else {
+                ConexionSQL_Negocio eliminarProducto = new ConexionSQL_Negocio();
+                eliminarProducto.eliminarProducto(textboxID.Text);
+                MessageBox.Show("Producto eliminado correctamente");
+                actualizarTabla();
+                limpiarCampos();
+
+            }
+
 
         }
     }

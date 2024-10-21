@@ -37,11 +37,13 @@
             label1 = new Label();
             labelRolUsuarioDinamico = new Label();
             labelUsuarioDinamico = new Label();
+            buttonGestionarClientes = new Button();
+            buttonVerComprobantes = new Button();
             SuspendLayout();
             // 
             // BotonSalir
             // 
-            BotonSalir.Location = new Point(498, 299);
+            BotonSalir.Location = new Point(673, 460);
             BotonSalir.Name = "BotonSalir";
             BotonSalir.Size = new Size(145, 23);
             BotonSalir.TabIndex = 1;
@@ -51,7 +53,7 @@
             // 
             // botonActualizacionEmpleados
             // 
-            botonActualizacionEmpleados.Location = new Point(64, 134);
+            botonActualizacionEmpleados.Location = new Point(44, 158);
             botonActualizacionEmpleados.Name = "botonActualizacionEmpleados";
             botonActualizacionEmpleados.Size = new Size(189, 116);
             botonActualizacionEmpleados.TabIndex = 2;
@@ -61,7 +63,7 @@
             // 
             // botonCompraProducto
             // 
-            botonCompraProducto.Location = new Point(259, 134);
+            botonCompraProducto.Location = new Point(239, 158);
             botonCompraProducto.Name = "botonCompraProducto";
             botonCompraProducto.Size = new Size(189, 116);
             botonCompraProducto.TabIndex = 3;
@@ -71,7 +73,7 @@
             // 
             // botonVentaDeProductos
             // 
-            botonVentaDeProductos.Location = new Point(454, 134);
+            botonVentaDeProductos.Location = new Point(434, 158);
             botonVentaDeProductos.Name = "botonVentaDeProductos";
             botonVentaDeProductos.Size = new Size(189, 116);
             botonVentaDeProductos.TabIndex = 4;
@@ -81,10 +83,10 @@
             // 
             // botonConsultaMovimientos
             // 
-            botonConsultaMovimientos.Location = new Point(64, 256);
+            botonConsultaMovimientos.Location = new Point(629, 158);
             botonConsultaMovimientos.Name = "botonConsultaMovimientos";
             botonConsultaMovimientos.RightToLeft = RightToLeft.No;
-            botonConsultaMovimientos.Size = new Size(579, 37);
+            botonConsultaMovimientos.Size = new Size(189, 116);
             botonConsultaMovimientos.TabIndex = 5;
             botonConsultaMovimientos.Text = "Acciones de producto";
             botonConsultaMovimientos.UseVisualStyleBackColor = true;
@@ -94,7 +96,7 @@
             // 
             labelBienvenidaEstatico.AutoSize = true;
             labelBienvenidaEstatico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelBienvenidaEstatico.Location = new Point(111, 46);
+            labelBienvenidaEstatico.Location = new Point(44, 67);
             labelBienvenidaEstatico.Name = "labelBienvenidaEstatico";
             labelBienvenidaEstatico.Size = new Size(262, 32);
             labelBienvenidaEstatico.TabIndex = 6;
@@ -104,7 +106,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
-            label1.Location = new Point(117, 78);
+            label1.Location = new Point(50, 99);
             label1.Name = "label1";
             label1.Size = new Size(83, 13);
             label1.TabIndex = 7;
@@ -114,7 +116,7 @@
             // 
             labelRolUsuarioDinamico.AutoSize = true;
             labelRolUsuarioDinamico.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
-            labelRolUsuarioDinamico.Location = new Point(200, 78);
+            labelRolUsuarioDinamico.Location = new Point(133, 99);
             labelRolUsuarioDinamico.Name = "labelRolUsuarioDinamico";
             labelRolUsuarioDinamico.Size = new Size(0, 13);
             labelRolUsuarioDinamico.TabIndex = 8;
@@ -123,17 +125,41 @@
             // 
             labelUsuarioDinamico.AutoSize = true;
             labelUsuarioDinamico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelUsuarioDinamico.Location = new Point(367, 46);
+            labelUsuarioDinamico.Location = new Point(300, 67);
             labelUsuarioDinamico.Name = "labelUsuarioDinamico";
             labelUsuarioDinamico.Size = new Size(0, 32);
             labelUsuarioDinamico.TabIndex = 9;
+            // 
+            // buttonGestionarClientes
+            // 
+            buttonGestionarClientes.Location = new Point(239, 280);
+            buttonGestionarClientes.Name = "buttonGestionarClientes";
+            buttonGestionarClientes.RightToLeft = RightToLeft.No;
+            buttonGestionarClientes.Size = new Size(189, 116);
+            buttonGestionarClientes.TabIndex = 10;
+            buttonGestionarClientes.Text = "Gestionar Clientes";
+            buttonGestionarClientes.UseVisualStyleBackColor = true;
+            buttonGestionarClientes.Click += buttonGestionarClientes_Click;
+            // 
+            // buttonVerComprobantes
+            // 
+            buttonVerComprobantes.Location = new Point(434, 280);
+            buttonVerComprobantes.Name = "buttonVerComprobantes";
+            buttonVerComprobantes.RightToLeft = RightToLeft.No;
+            buttonVerComprobantes.Size = new Size(189, 116);
+            buttonVerComprobantes.TabIndex = 11;
+            buttonVerComprobantes.Text = "Ver comprobantes";
+            buttonVerComprobantes.UseVisualStyleBackColor = true;
+            buttonVerComprobantes.Click += buttonVerComprobantes_Click;
             // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(705, 377);
+            ClientSize = new Size(868, 547);
+            Controls.Add(buttonVerComprobantes);
+            Controls.Add(buttonGestionarClientes);
             Controls.Add(labelUsuarioDinamico);
             Controls.Add(labelRolUsuarioDinamico);
             Controls.Add(label1);
@@ -160,5 +186,7 @@
         private Label label1;
         private Label labelRolUsuarioDinamico;
         private Label labelUsuarioDinamico;
+        private Button buttonGestionarClientes;
+        private Button buttonVerComprobantes;
     }
 }

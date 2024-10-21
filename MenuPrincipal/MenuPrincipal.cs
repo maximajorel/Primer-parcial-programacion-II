@@ -3,12 +3,14 @@ using PresentacionComprarProducto;
 using PresentacionVenderProducto;
 using PresentacionConsultaMovimientos;
 using Negocio;
+using Presentacion_VerComprobantes;
+using Presentacion_AgregarCliente;
 namespace MenuPrincipal
 {
     public partial class MenuPrincipal : Form
     {
         public string usuario { get; set; }
-        public string contraseña  { get; set; }
+        public string contraseña { get; set; }
         public string rol;
         bool mostrarmenu = false;
         public void verificarRol()
@@ -40,7 +42,8 @@ namespace MenuPrincipal
 
         // Habilitar o deshabilitar botones segun su rol
 
-        public void validarRoles() {
+        public void validarRoles()
+        {
             if (rol == "Operador")
             {
                 labelRolUsuarioDinamico.Text = "Operador";
@@ -53,7 +56,7 @@ namespace MenuPrincipal
                 labelRolUsuarioDinamico.Text = "Auditor";
                 botonActualizacionEmpleados.Enabled = false;
             }
-            else if ( rol == "Administrador" )
+            else if (rol == "Administrador")
             {
                 labelRolUsuarioDinamico.Text = "Administrador";
                 botonActualizacionEmpleados.Enabled = true;
@@ -61,16 +64,20 @@ namespace MenuPrincipal
                 botonConsultaMovimientos.Enabled = true;
                 botonVentaDeProductos.Enabled = true;
             }
-            else {
+            else
+            {
                 labelRolUsuarioDinamico.Text = "No tiene rol asignado, contactese con el administrador";
                 botonActualizacionEmpleados.Enabled = false;
                 botonCompraProducto.Enabled = false;
                 botonConsultaMovimientos.Enabled = false;
                 botonVentaDeProductos.Enabled = false;
+                buttonVerComprobantes.Enabled = false;
+
             }
         }
-        public void obtenerNombre() { 
-            
+        public void obtenerNombre()
+        {
+
             ConexionSQL_Negocio obtenernombre = new ConexionSQL_Negocio();
             string usuario = "Anonimo";
             usuario = obtenernombre.nombreyApellido(this.usuario, this.contraseña);
@@ -81,9 +88,9 @@ namespace MenuPrincipal
         public MenuPrincipal()
         {
             InitializeComponent();
-            
+
         }
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -94,13 +101,13 @@ namespace MenuPrincipal
             obtenerNombre();
             verificarRol();
             validarRoles();
-          //  volverMenu();
+            //  volverMenu();
         }
 
         private void BotonSalir_Click(object sender, EventArgs e)
         {
 
-            // Alerta de ¿Desea salir?, con opciones Salir y cancelar:
+
             DialogResult dialogResult = MessageBox.Show("¿Desea salir?", "Salir", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -115,10 +122,10 @@ namespace MenuPrincipal
 
         private void botonActualizacionEmpleados_Click(object sender, EventArgs e)
         {
-            // Mostrar la ventana actualizarRoles, y cuando se cierre, mostrar esta ventana
-            actualizarRoles actualizarRoles = new actualizarRoles();       
+            // Mostrar la ventana actualizarRoles
+            actualizarRoles actualizarRoles = new actualizarRoles();
             actualizarRoles.Show();
-            this.Hide();
+            // this.Hide();
 
 
         }
@@ -127,24 +134,32 @@ namespace MenuPrincipal
         {
             ComprarProducto comprarProducto = new ComprarProducto();
             comprarProducto.Show();
-            
+
         }
 
         private void botonVentaDeProductos_Click(object sender, EventArgs e)
         {
             VenderProducto venderProducto = new VenderProducto();
             venderProducto.Show();
-            
+
         }
 
         private void botonConsultaMovimientos_Click(object sender, EventArgs e)
         {
-          ConsultaMovimiento consultaMovimientos  = new ConsultaMovimiento();
+            ConsultaMovimiento consultaMovimientos = new ConsultaMovimiento();
             consultaMovimientos.Show();
-            
-            
+        }
 
+        private void buttonVerComprobantes_Click(object sender, EventArgs e)
+        {
+            Presentacion_VerComprobantes.formVerComprobantes verComprobantes = new Presentacion_VerComprobantes.formVerComprobantes();
+            verComprobantes.Show();
+        }
 
+        private void buttonGestionarClientes_Click(object sender, EventArgs e)
+        {
+            Presentacion_AgregarCliente.formPresentacionClientes formPresentacionClientes = new Presentacion_AgregarCliente.formPresentacionClientes();
+            formPresentacionClientes.Show();
         }
     }
 }

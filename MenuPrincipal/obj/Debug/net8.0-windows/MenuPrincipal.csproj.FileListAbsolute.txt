@@ -92,3 +92,13 @@ D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug
 D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Negocio.dll
 D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Datos.pdb
 D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Negocio.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_VerComprobantes.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_VerComprobantes.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_VerComprobantes.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_VerComprobantes.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_VerComprobantes.pdb
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_AgregarCliente.deps.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_AgregarCliente.runtimeconfig.json
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_AgregarCliente.exe
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_AgregarCliente.dll
+D:\Documentos\Repositorio\Primer-parcial-programacion-II\MenuPrincipal\bin\Debug\net8.0-windows\Presentacion_AgregarCliente.pdb

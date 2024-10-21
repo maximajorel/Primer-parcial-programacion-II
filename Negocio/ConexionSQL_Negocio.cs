@@ -67,8 +67,27 @@ namespace Negocio
         {
              return conexion.traerNombreApellido(usuario, contraseña);
         }
+        public DataTable verComprobantes()
+        {
+            return conexion.verComprobantes();
+        }
+        public DataTable verClientes() { 
+            
+            return conexion.verClientes();
 
-
+        }      
+        public void agregarCliente(string apellido, string nombre, string telefono, string fechaNac, string descuento)
+        {
+            conexion.agregarCliente(apellido, nombre, telefono, fechaNac, descuento);
+        }        
+        public void editarCliente(string id, string apellido, string nombre, string telefono, string fechaNac, string descuento)
+        {
+            conexion.editarCliente(id, apellido, nombre, telefono, fechaNac, descuento);
+        }
+        public void eliminarCliente(string id)
+        {
+            conexion.eliminarCliente(id);
+        }
 
 
 
