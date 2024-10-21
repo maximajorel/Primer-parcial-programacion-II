@@ -6,7 +6,7 @@ namespace PresentacionActualizarRoles
     public partial class actualizarRoles : Form
     {
         private ConexionSQL_Negocio consultaUsuarios;
-          
+        public bool volvermenu = false;
         public actualizarRoles()
         {
             InitializeComponent();
@@ -101,7 +101,8 @@ namespace PresentacionActualizarRoles
 
         private void botonVolverMenuPrincipal_Click(object sender, EventArgs e)
         {
-
+            volvermenu = true;
+            this.Hide();
         }
     }
 }

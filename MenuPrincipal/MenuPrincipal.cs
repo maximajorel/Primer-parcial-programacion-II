@@ -10,14 +10,34 @@ namespace MenuPrincipal
         public string usuario { get; set; }
         public string contraseña  { get; set; }
         public string rol;
-
+        bool mostrarmenu = false;
         public void verificarRol()
         {
             ConexionSQL_Negocio verificarRol = new ConexionSQL_Negocio();
             rol = verificarRol.verificarRol(usuario, contraseña);
 
         }
-        
+
+        // Funcion para volver al menu
+
+        /*
+        public void volverMenu()
+        {
+            PresentacionActualizarRoles.actualizarRoles actualizarRoles = new PresentacionActualizarRoles.actualizarRoles();
+            mostrarmenu = actualizarRoles.volvermenu;
+
+            while (mostrarmenu) { 
+            
+            }
+                      
+             this.Show();
+             mostrarmenu = false;
+            
+
+                
+        }
+        */
+
         // Habilitar o deshabilitar botones segun su rol
 
         public void validarRoles() {
@@ -74,11 +94,18 @@ namespace MenuPrincipal
             obtenerNombre();
             verificarRol();
             validarRoles();
+          //  volverMenu();
         }
 
         private void BotonSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            // Alerta de ¿Desea salir?, con opciones Salir y cancelar:
+            DialogResult dialogResult = MessageBox.Show("¿Desea salir?", "Salir", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void botonCerrarSesion_Click(object sender, EventArgs e)
@@ -91,7 +118,7 @@ namespace MenuPrincipal
             // Mostrar la ventana actualizarRoles, y cuando se cierre, mostrar esta ventana
             actualizarRoles actualizarRoles = new actualizarRoles();       
             actualizarRoles.Show();
-            
+            this.Hide();
 
 
         }
