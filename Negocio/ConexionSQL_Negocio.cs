@@ -101,8 +101,15 @@ namespace Negocio
             return conexion.obtenerNombreApellidoCliente();
         }
 
+        public double obtenerGananciaProducto(string idProducto)
+        {
+            return conexion.porcentajeGananciaProducto(idProducto);
+        }
 
-
+        public double obtenerPrecioCostoProducto(string idProducto)
+        {
+            return conexion.precioCostoProducto(idProducto);
+        }
 
 
 

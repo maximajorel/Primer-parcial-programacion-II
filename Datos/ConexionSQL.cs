@@ -16,7 +16,7 @@ namespace Datos
 {
     public class ConexionSql
     {
-        static string stringConexion = "server= NOTEBOOK-MAXI\\SQLEXPRESS;database= primerparcial;integrated security =true;TrustServerCertificate=True;";
+        static string stringConexion = "server= MAXIPC\\PROGRAMACIONII;database= primerparcial;integrated security =true;TrustServerCertificate=True;";
         SqlConnection conexion = new SqlConnection(stringConexion);
 
         // Funcion para consultar login
@@ -70,7 +70,7 @@ namespace Datos
         {
 
             conexion.Open();
-            string consulta = "SELECT NombreProducto, Stock from Producto";
+            string consulta = "SELECT id, Codigo, NombreProducto, Stock from Producto";
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
             DataTable tabla = new DataTable();
             adapter.Fill(tabla);
@@ -294,6 +294,35 @@ namespace Datos
             }
             conexion.Close();
             return lista;
+        }
+
+
+
+        public double porcentajeGananciaProducto(string id)
+        {
+
+            conexion.Open();
+            string consulta = $"select PorcentajeGanancia from Producto where id='{id}'";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            double porcentaje = Convert.ToDouble(comando.ExecuteScalar());
+            conexion.Close();
+            return porcentaje;
+
+
+        }
+
+
+        public double precioCostoProducto(string id)
+        {
+
+            conexion.Open();
+            string consulta = $"select PrecioCosto from Producto where id='{id}'";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            double porcentaje = Convert.ToDouble(comando.ExecuteScalar());
+            conexion.Close();
+            return porcentaje;
+
+
         }
     }
 }

@@ -40,17 +40,28 @@
             label4 = new Label();
             comboBoxNombreClientes = new ComboBox();
             label5 = new Label();
-            numericUpDown1 = new NumericUpDown();
+            numericUpCantidadProducto = new NumericUpDown();
             label6 = new Label();
+            labelIDProducto = new Label();
+            textBoxIDProducto = new TextBox();
+            label7 = new Label();
+            textBoxNombreProducto = new TextBox();
+            tituloTotalProducto = new Label();
+            labelTotalCompraProducto = new Label();
             ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpCantidadProducto).BeginInit();
             SuspendLayout();
             // 
             // tablaProductos
             // 
+            tablaProductos.AllowUserToAddRows = false;
+            tablaProductos.AllowUserToDeleteRows = false;
+            tablaProductos.AllowUserToOrderColumns = true;
             tablaProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             tablaProductos.Location = new Point(12, 12);
             tablaProductos.Name = "tablaProductos";
+            tablaProductos.ReadOnly = true;
+            tablaProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             tablaProductos.Size = new Size(534, 263);
             tablaProductos.TabIndex = 0;
             tablaProductos.CellContentClick += dataGridView1_CellContentClick;
@@ -155,14 +166,15 @@
             label5.TabIndex = 11;
             label5.Text = "Cantidad";
             // 
-            // numericUpDown1
+            // numericUpCantidadProducto
             // 
-            numericUpDown1.Location = new Point(97, 472);
-            numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(164, 23);
-            numericUpDown1.TabIndex = 12;
-            numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpCantidadProducto.Location = new Point(97, 472);
+            numericUpCantidadProducto.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpCantidadProducto.Name = "numericUpCantidadProducto";
+            numericUpCantidadProducto.Size = new Size(164, 23);
+            numericUpCantidadProducto.TabIndex = 12;
+            numericUpCantidadProducto.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpCantidadProducto.ValueChanged += numericUpCantidadProducto_ValueChanged;
             // 
             // label6
             // 
@@ -174,13 +186,74 @@
             label6.TabIndex = 13;
             label6.Text = "Informacion de producto";
             // 
+            // labelIDProducto
+            // 
+            labelIDProducto.AutoSize = true;
+            labelIDProducto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelIDProducto.Location = new Point(552, 49);
+            labelIDProducto.Name = "labelIDProducto";
+            labelIDProducto.Size = new Size(113, 21);
+            labelIDProducto.TabIndex = 14;
+            labelIDProducto.Text = "ID de producto";
+            // 
+            // textBoxIDProducto
+            // 
+            textBoxIDProducto.Location = new Point(671, 51);
+            textBoxIDProducto.Name = "textBoxIDProducto";
+            textBoxIDProducto.ReadOnly = true;
+            textBoxIDProducto.Size = new Size(100, 23);
+            textBoxIDProducto.TabIndex = 15;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(552, 95);
+            label7.Name = "label7";
+            label7.Size = new Size(156, 21);
+            label7.TabIndex = 16;
+            label7.Text = "Nombre de producto";
+            // 
+            // textBoxNombreProducto
+            // 
+            textBoxNombreProducto.Location = new Point(709, 95);
+            textBoxNombreProducto.Name = "textBoxNombreProducto";
+            textBoxNombreProducto.ReadOnly = true;
+            textBoxNombreProducto.Size = new Size(418, 23);
+            textBoxNombreProducto.TabIndex = 17;
+            // 
+            // tituloTotalProducto
+            // 
+            tituloTotalProducto.AutoSize = true;
+            tituloTotalProducto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tituloTotalProducto.Location = new Point(552, 149);
+            tituloTotalProducto.Name = "tituloTotalProducto";
+            tituloTotalProducto.Size = new Size(58, 21);
+            tituloTotalProducto.TabIndex = 18;
+            tituloTotalProducto.Text = "Total: $";
+            // 
+            // labelTotalCompraProducto
+            // 
+            labelTotalCompraProducto.AutoSize = true;
+            labelTotalCompraProducto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTotalCompraProducto.Location = new Point(610, 149);
+            labelTotalCompraProducto.Name = "labelTotalCompraProducto";
+            labelTotalCompraProducto.Size = new Size(0, 21);
+            labelTotalCompraProducto.TabIndex = 19;
+            // 
             // ComprarProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1139, 554);
+            Controls.Add(labelTotalCompraProducto);
+            Controls.Add(tituloTotalProducto);
+            Controls.Add(textBoxNombreProducto);
+            Controls.Add(label7);
+            Controls.Add(textBoxIDProducto);
+            Controls.Add(labelIDProducto);
             Controls.Add(label6);
-            Controls.Add(numericUpDown1);
+            Controls.Add(numericUpCantidadProducto);
             Controls.Add(label5);
             Controls.Add(comboBoxNombreClientes);
             Controls.Add(label4);
@@ -197,7 +270,7 @@
             Text = "Comprar Producto";
             Load += ComprarProducto_Load;
             ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpCantidadProducto).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -216,7 +289,13 @@
         private Label label4;
         private ComboBox comboBoxNombreClientes;
         private Label label5;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown numericUpCantidadProducto;
         private Label label6;
+        private Label labelIDProducto;
+        private TextBox textBoxIDProducto;
+        private Label label7;
+        private TextBox textBoxNombreProducto;
+        private Label tituloTotalProducto;
+        private Label labelTotalCompraProducto;
     }
 }
