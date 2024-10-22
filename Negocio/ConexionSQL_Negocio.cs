@@ -110,6 +110,17 @@ namespace Negocio
         {
             return conexion.precioCostoProducto(idProducto);
         }
+        public void cargarComprobante(string tipo, string Numero, string Fecha, string Empleado, string Cliente, string Monto)
+        { 
+            conexion.cargarComprobante(tipo, Numero, Fecha, Empleado, Cliente, Monto);
+
+        }
+        public void actualizarStock( string id, string cantidad)
+        {
+            conexion.sumarStockProducto(id, cantidad);
+
+
+        }
 
 
 
@@ -118,6 +129,6 @@ namespace Negocio
 
 
 
-    }
+        }
 
 }

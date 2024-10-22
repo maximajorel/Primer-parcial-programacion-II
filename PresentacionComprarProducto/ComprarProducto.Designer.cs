@@ -33,7 +33,7 @@
             LabelID = new Label();
             textBoxNumeroFactura = new TextBox();
             label1 = new Label();
-            textBox1 = new TextBox();
+            texboxTipoComprobante = new TextBox();
             label2 = new Label();
             dateTimePicker1 = new DateTimePicker();
             label3 = new Label();
@@ -48,6 +48,8 @@
             textBoxNombreProducto = new TextBox();
             tituloTotalProducto = new Label();
             labelTotalCompraProducto = new Label();
+            buttonLimpiarCampos = new Button();
+            buttonCargarFactura = new Button();
             ((System.ComponentModel.ISupportInitialize)tablaProductos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpCantidadProducto).BeginInit();
             SuspendLayout();
@@ -64,7 +66,7 @@
             tablaProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             tablaProductos.Size = new Size(534, 263);
             tablaProductos.TabIndex = 0;
-            tablaProductos.CellContentClick += dataGridView1_CellContentClick;
+            tablaProductos.CellClick += tablaProductos_CellClick;
             // 
             // comboBoxEmpleados
             // 
@@ -73,7 +75,6 @@
             comboBoxEmpleados.Name = "comboBoxEmpleados";
             comboBoxEmpleados.Size = new Size(164, 23);
             comboBoxEmpleados.TabIndex = 1;
-            comboBoxEmpleados.Text = "Seleccione una opcion";
             // 
             // LabelID
             // 
@@ -102,12 +103,12 @@
             label1.TabIndex = 4;
             label1.Text = "Tipo";
             // 
-            // textBox1
+            // texboxTipoComprobante
             // 
-            textBox1.Location = new Point(58, 332);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(203, 23);
-            textBox1.TabIndex = 5;
+            texboxTipoComprobante.Location = new Point(58, 332);
+            texboxTipoComprobante.Name = "texboxTipoComprobante";
+            texboxTipoComprobante.Size = new Size(203, 23);
+            texboxTipoComprobante.TabIndex = 5;
             // 
             // label2
             // 
@@ -153,8 +154,6 @@
             comboBoxNombreClientes.Name = "comboBoxNombreClientes";
             comboBoxNombreClientes.Size = new Size(164, 23);
             comboBoxNombreClientes.TabIndex = 10;
-            comboBoxNombreClientes.Text = "Seleccione una opcion";
-            comboBoxNombreClientes.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label5
             // 
@@ -169,7 +168,6 @@
             // numericUpCantidadProducto
             // 
             numericUpCantidadProducto.Location = new Point(97, 472);
-            numericUpCantidadProducto.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpCantidadProducto.Name = "numericUpCantidadProducto";
             numericUpCantidadProducto.Size = new Size(164, 23);
             numericUpCantidadProducto.TabIndex = 12;
@@ -180,7 +178,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(709, 12);
+            label6.Location = new Point(552, 12);
             label6.Name = "label6";
             label6.Size = new Size(195, 21);
             label6.TabIndex = 13;
@@ -219,7 +217,7 @@
             textBoxNombreProducto.Location = new Point(709, 95);
             textBoxNombreProducto.Name = "textBoxNombreProducto";
             textBoxNombreProducto.ReadOnly = true;
-            textBoxNombreProducto.Size = new Size(418, 23);
+            textBoxNombreProducto.Size = new Size(132, 23);
             textBoxNombreProducto.TabIndex = 17;
             // 
             // tituloTotalProducto
@@ -241,11 +239,33 @@
             labelTotalCompraProducto.Size = new Size(0, 21);
             labelTotalCompraProducto.TabIndex = 19;
             // 
+            // buttonLimpiarCampos
+            // 
+            buttonLimpiarCampos.Location = new Point(533, 519);
+            buttonLimpiarCampos.Name = "buttonLimpiarCampos";
+            buttonLimpiarCampos.Size = new Size(155, 23);
+            buttonLimpiarCampos.TabIndex = 20;
+            buttonLimpiarCampos.Text = "Limpiar Campos";
+            buttonLimpiarCampos.UseVisualStyleBackColor = true;
+            buttonLimpiarCampos.Click += buttonLimpiarCampos_Click;
+            // 
+            // buttonCargarFactura
+            // 
+            buttonCargarFactura.Location = new Point(694, 519);
+            buttonCargarFactura.Name = "buttonCargarFactura";
+            buttonCargarFactura.Size = new Size(155, 23);
+            buttonCargarFactura.TabIndex = 21;
+            buttonCargarFactura.Text = "Cargar Factura";
+            buttonCargarFactura.UseVisualStyleBackColor = true;
+            buttonCargarFactura.Click += buttonCargarFactura_Click;
+            // 
             // ComprarProducto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1139, 554);
+            ClientSize = new Size(861, 554);
+            Controls.Add(buttonCargarFactura);
+            Controls.Add(buttonLimpiarCampos);
             Controls.Add(labelTotalCompraProducto);
             Controls.Add(tituloTotalProducto);
             Controls.Add(textBoxNombreProducto);
@@ -260,7 +280,7 @@
             Controls.Add(label3);
             Controls.Add(dateTimePicker1);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(texboxTipoComprobante);
             Controls.Add(label1);
             Controls.Add(textBoxNumeroFactura);
             Controls.Add(LabelID);
@@ -282,7 +302,7 @@
         private Label LabelID;
         private TextBox textBoxNumeroFactura;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox texboxTipoComprobante;
         private Label label2;
         private DateTimePicker dateTimePicker1;
         private Label label3;
@@ -297,5 +317,7 @@
         private TextBox textBoxNombreProducto;
         private Label tituloTotalProducto;
         private Label labelTotalCompraProducto;
+        private Button buttonLimpiarCampos;
+        private Button buttonCargarFactura;
     }
 }

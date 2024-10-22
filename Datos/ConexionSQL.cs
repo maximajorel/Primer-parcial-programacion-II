@@ -297,7 +297,7 @@ namespace Datos
         }
 
 
-
+        // Porcentaje de ganancia
         public double porcentajeGananciaProducto(string id)
         {
 
@@ -311,7 +311,7 @@ namespace Datos
 
         }
 
-
+        // Precio costo producto
         public double precioCostoProducto(string id)
         {
 
@@ -323,6 +323,27 @@ namespace Datos
             return porcentaje;
 
 
+        }
+        // Cargar comprobante
+        public void cargarComprobante(string tipo, string Numero, string Fecha, string Empleado, string Cliente, string Monto) { 
+            
+            conexion.Open();
+            string consulta = $"insert into ComprobantesEmitidos (Tipo, Numero, Fecha, Empleado, Cliente, Monto) values ('{tipo}', '{Numero}', '{Fecha}', '{Empleado}', '{Cliente}', '{Monto}');";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+
+        }
+
+        // Sumar stock a un producto 
+        public void sumarStockProducto(string id, string cantidad)
+        {
+            conexion.Open();
+            string consulta = $"update Producto set Stock = Stock + {cantidad} where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
         }
     }
 }
