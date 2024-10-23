@@ -67,12 +67,12 @@ namespace MenuPrincipal
             else
             {
                 labelRolUsuarioDinamico.Text = "No tiene rol asignado, contactese con el administrador";
-                //botonActualizacionEmpleados.Enabled = false;
-                //botonCompraProducto.Enabled = false;
-                //botonConsultaMovimientos.Enabled = false;
-                //botonVentaDeProductos.Enabled = false;
-                //buttonVerComprobantes.Enabled = false;
-                //buttonGestionarClientes.Enabled = false;
+                botonActualizacionEmpleados.Enabled = false;
+                botonCompraProducto.Enabled = false;
+                botonConsultaMovimientos.Enabled = false;
+                botonVentaDeProductos.Enabled = false;
+                buttonVerComprobantes.Enabled = false;
+                buttonGestionarClientes.Enabled = false;
 
             }
         }
