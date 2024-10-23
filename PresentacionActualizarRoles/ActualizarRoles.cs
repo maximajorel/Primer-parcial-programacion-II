@@ -6,13 +6,14 @@ namespace PresentacionActualizarRoles
     public partial class actualizarRoles : Form
     {
         private ConexionSQL_Negocio consultaUsuarios;
-          
+        public bool volvermenu = false;
         public actualizarRoles()
         {
             InitializeComponent();
 
         }
-
+        // Deshabilitar botones si los campos de textos se encuentran vacios
+        
         public void LimpiarCajas()
         {
             textboxID.Text = "";
@@ -79,29 +80,47 @@ namespace PresentacionActualizarRoles
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Eliminar usuario
-            ConexionSQL_Negocio eliminarUsuario = new ConexionSQL_Negocio();
-            eliminarUsuario.eliminarUsuario(textboxID.Text);
-            LimpiarCajas();
-            actualizarDatos();
-            MessageBox.Show("Usuario eliminado con exito");
+
+            if (textboxID.Text == "")
+            {
+                MessageBox.Show("Seleccione un usuario para eliminar");
+            }
+            else {
+                // Eliminar usuario
+                ConexionSQL_Negocio eliminarUsuario = new ConexionSQL_Negocio();
+                eliminarUsuario.eliminarUsuario(textboxID.Text);
+                LimpiarCajas();
+                actualizarDatos();
+                MessageBox.Show("Usuario eliminado con exito");
+            }
+
 
         }
 
         private void botonEditarUsuario_Click(object sender, EventArgs e)
         {
-            // Editar usuario
-            ConexionSQL_Negocio editarUsuario = new ConexionSQL_Negocio();
-            string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
-            editarUsuario.editarUsuario(textboxID.Text, textboxApellido.Text, textboxNombre.Text, textboxTelefono.Text, fechaNac, textboxUsuario.Text, textboxContraseña.Text, comboboxRolUsuario.Text);
-            LimpiarCajas();
-            actualizarDatos();
-            MessageBox.Show("Usuario editado con exito");
+
+            if (textboxID.Text == "")
+            {
+                MessageBox.Show("Seleccione un usuario para editar");
+            }
+            else {
+                // Editar usuario
+                ConexionSQL_Negocio editarUsuario = new ConexionSQL_Negocio();
+                string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
+                editarUsuario.editarUsuario(textboxID.Text, textboxApellido.Text, textboxNombre.Text, textboxTelefono.Text, fechaNac, textboxUsuario.Text, textboxContraseña.Text, comboboxRolUsuario.Text);
+                LimpiarCajas();
+                actualizarDatos();
+                MessageBox.Show("Usuario editado con exito");
+            }
+
+
         }
 
         private void botonVolverMenuPrincipal_Click(object sender, EventArgs e)
         {
-
+            volvermenu = true;
+            this.Hide();
         }
     }
 }

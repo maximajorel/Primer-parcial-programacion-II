@@ -11,7 +11,9 @@
           "PresentacionActualizarRoles": "1.0.0",
           "PresentacionComprarProducto": "1.0.0",
           "PresentacionConsultaMovimientos": "1.0.0",
-          "PresentacionVenderProducto": "1.0.0"
+          "PresentacionVenderProducto": "1.0.0",
+          "Presentacion_AgregarCliente": "1.0.0",
+          "Presentacion_VerComprobantes": "1.0.0"
         },
         "runtime": {
           "MenuPrincipal.dll": {}
@@ -407,6 +409,28 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Presentacion_AgregarCliente/1.0.0": {
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
+        "runtime": {
+          "Presentacion_AgregarCliente.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Presentacion_VerComprobantes/1.0.0": {
+        "dependencies": {
+          "Negocio": "1.0.0"
+        },
+        "runtime": {
+          "Presentacion_VerComprobantes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -680,6 +704,16 @@
       "sha512": ""
     },
     "PresentacionVenderProducto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Presentacion_AgregarCliente/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Presentacion_VerComprobantes/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

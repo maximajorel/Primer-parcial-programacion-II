@@ -13,6 +13,9 @@
     <ProjectReference Include="..\PresentacionComprarProducto\PresentacionComprarProducto.csproj" />
     <ProjectReference Include="..\PresentacionConsultaMovimientos\PresentacionConsultaMovimientos.csproj" />
     <ProjectReference Include="..\PresentacionVenderProducto\PresentacionVenderProducto.csproj" />
+    <ProjectReference Include="..\Presentacion_AgregarCliente\Presentacion_AgregarCliente.csproj" />
+    <ProjectReference Include="..\Presentacion_VerComprobantes\Presentacion_VerComprobantes.csproj" />
+    
   </ItemGroup>
 
 </Project>

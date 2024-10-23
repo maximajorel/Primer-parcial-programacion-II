@@ -84,7 +84,7 @@
             // textboxID
             // 
             textboxID.Enabled = false;
-            textboxID.Location = new Point(52, 362);
+            textboxID.Location = new Point(53, 362);
             textboxID.Name = "textboxID";
             textboxID.Size = new Size(58, 23);
             textboxID.TabIndex = 2;
@@ -181,6 +181,7 @@
             textboxContraseña.Name = "textboxContraseña";
             textboxContraseña.Size = new Size(196, 23);
             textboxContraseña.TabIndex = 14;
+            textboxContraseña.UseSystemPasswordChar = true;
             // 
             // label2
             // 

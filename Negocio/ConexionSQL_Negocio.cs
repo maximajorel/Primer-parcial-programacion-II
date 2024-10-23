@@ -63,6 +63,72 @@ namespace Negocio
         {
             return conexion.verificarRol(usuario, contraseña);
         }
+        public string nombreyApellido(string usuario, string contraseña)
+        {
+             return conexion.traerNombreApellido(usuario, contraseña);
+        }
+        public DataTable verComprobantes()
+        {
+            return conexion.verComprobantes();
+        }
+        public DataTable verClientes() { 
+            
+            return conexion.verClientes();
+
+        }      
+        public void agregarCliente(string apellido, string nombre, string telefono, string fechaNac, string descuento)
+        {
+            conexion.agregarCliente(apellido, nombre, telefono, fechaNac, descuento);
+        }        
+        public void editarCliente(string id, string apellido, string nombre, string telefono, string fechaNac, string descuento)
+        {
+            conexion.editarCliente(id, apellido, nombre, telefono, fechaNac, descuento);
+        }
+        public void eliminarCliente(string id)
+        {
+            conexion.eliminarCliente(id);
+        }
+
+        
+        public List<String> obtenerNombresEmpleados() {
+
+            return conexion.obtenerNombreApellidoEmpleado();
+        
+        }
+
+        public List<String> obtenerNombresClientes() { 
+        
+            return conexion.obtenerNombreApellidoCliente();
+        }
+
+        public double obtenerGananciaProducto(string idProducto)
+        {
+            return conexion.porcentajeGananciaProducto(idProducto);
+        }
+
+        public double obtenerPrecioCostoProducto(string idProducto)
+        {
+            return conexion.precioCostoProducto(idProducto);
+        }
+        public void cargarComprobante(string tipo, string Numero, string Fecha, string Empleado, string Cliente, string Monto)
+        { 
+            conexion.cargarComprobante(tipo, Numero, Fecha, Empleado, Cliente, Monto);
+
+        }
+        public void actualizarStock( string id, string cantidad)
+        {
+            conexion.sumarStockProducto(id, cantidad);
+
+
+        }
+        public void restarStockProducto(string id, string cantidad)
+        {
+            conexion.restarStockProducto(id, cantidad);
+        }
+        public int verStockProducto(string id)
+        {
+            return conexion.verStockProducto(id);
+        }
 
 
 
@@ -71,13 +137,6 @@ namespace Negocio
 
 
 
-
-
-
-
-
-
-
-    }
+        }
 
 }

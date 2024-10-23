@@ -21,7 +21,8 @@ namespace Datos
 
         // Funcion para consultar login
 
-        public int loginUsuario(string usuario, string contraseña) { 
+        public int loginUsuario(string usuario, string contraseña)
+        {
             conexion.Open();
             int resultado;
 
@@ -39,22 +40,24 @@ namespace Datos
         }
 
         // Funcion para ver todos los usuarios
-        public DataTable verUsuarios() {
+        public DataTable verUsuarios()
+        {
             conexion.Open();
             string consulta = "SELECT * FROM Empleado";
             SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexion);
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
-            
+
             conexion.Close();
             return tabla;
         }
         // Funcion para ver toda la informacion de todos los productos
 
-        public DataTable detalleTotalProductos() { 
+        public DataTable detalleTotalProductos()
+        {
             conexion.Open();
             string consulta = "SELECT * FROM Producto";
-            SqlDataAdapter adaptador = new SqlDataAdapter (consulta, conexion);
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexion);
             DataTable tabla = new DataTable();
             adaptador.Fill(tabla);
             conexion.Close();
@@ -63,10 +66,11 @@ namespace Datos
 
         // Funcion para compra productos (Aca filtramos un toque las columnas que se muestran)
 
-        public DataTable verCompraProducto() { 
+        public DataTable verCompraProducto()
+        {
 
             conexion.Open();
-            string consulta = "SELECT NombreProducto, Stock from Producto";
+            string consulta = "SELECT id, Codigo, NombreProducto, Stock from Producto";
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
             DataTable tabla = new DataTable();
             adapter.Fill(tabla);
@@ -76,10 +80,11 @@ namespace Datos
 
         // Funcion para venta productos (Tambien se filtra la info, similar a compra pero con la de porcentaje de ganancia)
 
-        public DataTable verVentaProducto() {
+        public DataTable verVentaProducto()
+        {
 
             conexion.Open();
-            string consulta = "SELECT NombreProducto, Stock, PrecioCosto, PorcentajeGanancia from Producto";
+            string consulta = "SELECT id,NombreProducto, Stock, PrecioCosto, PorcentajeGanancia from Producto";
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
             DataTable tabla = new DataTable();
             adapter.Fill(tabla);
@@ -90,8 +95,9 @@ namespace Datos
 
         // Funcion para agregar usuarios (Aca se insertan los datos de los usuarios)
 
-        public void agregarUsuario(string nombre, string apellido, string telefono, string fechaNac, string usuario, string contraseña, string rol) { 
-        
+        public void agregarUsuario(string nombre, string apellido, string telefono, string fechaNac, string usuario, string contraseña, string rol)
+        {
+
             conexion.Open();
             string consulta = $"insert into Empleado (Apellido, Nombre, Telefono, FechaNac, Usuario, Clave,rolEmpleado) values ('{nombre}', '{apellido}', '{telefono}','{fechaNac}','{usuario}','{contraseña}','{rol}');";
             SqlCommand comando = new SqlCommand(consulta, conexion);
@@ -120,7 +126,7 @@ namespace Datos
             conexion.Close();
         }
 
-        // Verificar contenido de columna rolEmpleado segun  coincidencia de busqueda en Usuario && Clave en la tabla Empleado
+        // Verificar rol
 
         public string verificarRol(string usuario, string contraseña)
         {
@@ -130,7 +136,7 @@ namespace Datos
                 conexion.Open();
                 string consulta = $"select rolEmpleado from Empleado where Usuario = '{usuario}' and Clave = '{contraseña}'";
                 SqlCommand comando = new SqlCommand(consulta, conexion);
-                rol = comando.ExecuteScalar()?.ToString() ?? "";                
+                rol = comando.ExecuteScalar()?.ToString() ?? "";
                 conexion.Close();
             }
             catch
@@ -139,6 +145,31 @@ namespace Datos
                 Console.WriteLine("No se encontró el rol");
             }
             return rol;
+        }
+
+        // Traer nombre y apellido del empleado segun usuario y clave
+
+        public string traerNombreApellido(string usuario, string contraseña)
+        {
+            string nombreApellido = "";
+            try
+            {
+                conexion.Open();
+                string consulta = $"select Nombre, Apellido from Empleado where Usuario = '{usuario}' and Clave = '{contraseña}'";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    nombreApellido = reader["Nombre"].ToString() + " " + reader["Apellido"].ToString();
+                }
+                conexion.Close();
+            }
+            catch
+            {
+                // Mensaje de error
+                Console.WriteLine("No se encontró el nombre y apellido");
+            }
+            return nombreApellido;
         }
 
 
@@ -173,6 +204,166 @@ namespace Datos
             conexion.Close();
         }
 
-    }
 
+
+        // Ver comprobantes en datatable
+        public DataTable verComprobantes()
+        {
+            conexion.Open();
+            string consulta = "SELECT * FROM ComprobantesEmitidos";
+            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexion);
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            conexion.Close();
+            return tabla;
+        }
+
+        // Ver Cliente
+        public DataTable verClientes()
+        {
+            conexion.Open();
+            string comando = "SELECT * FROM Cliente";
+            SqlDataAdapter adaptador = new SqlDataAdapter(comando, conexion);
+            DataTable tabla = new DataTable();
+            adaptador.Fill(tabla);
+            conexion.Close();
+            return tabla;
+
+        }
+
+        // Agregar cliente
+        public void agregarCliente(string apellido, string nombre, string telefono, string fechaNac, string descuento)
+        {
+
+
+            conexion.Open();
+            string consulta = $"insert into Cliente (Apellido, Nombre, Telefono, FechaNac, Descuento) values ('{apellido}', '{nombre}', '{telefono}', '{fechaNac}', '{descuento}');";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+        }
+
+        // Editar cliente
+        public void editarCliente(string id, string apellido, string nombre, string telefono, string fechaNac, string descuento)
+        {
+            conexion.Open();
+            string consulta = $"update Cliente set Apellido = '{apellido}', Nombre = '{nombre}', Telefono = '{telefono}', FechaNac = '{fechaNac}', Descuento = '{descuento}' where Codigo = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+        // Eliminar cliente
+        public void eliminarCliente(string id)
+        {
+            conexion.Open();
+            string consulta = $"delete from Cliente where Codigo = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+
+
+        // Obtener todos los nombre y apellido del empleado y guardarlo en una lista
+        public List<string> obtenerNombreApellidoEmpleado()
+        {
+            List<string> lista = new List<string>();
+            conexion.Open();
+            string consulta = "select Nombre, Apellido from Empleado";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                lista.Add(reader["Nombre"].ToString() + " " + reader["Apellido"].ToString());
+            }
+            conexion.Close();
+            return lista;
+        }
+
+        // Obtener todos los Apellido y Nombre de Cliente
+        public List<string> obtenerNombreApellidoCliente()
+        {
+            List<string> lista = new List<string>();
+            conexion.Open();
+            string consulta = "select Nombre, Apellido from Cliente";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            SqlDataReader reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                lista.Add(reader["Apellido"].ToString() + " " + reader["Nombre"].ToString());
+            }
+            conexion.Close();
+            return lista;
+        }
+
+
+        // Porcentaje de ganancia
+        public double porcentajeGananciaProducto(string id)
+        {
+
+            conexion.Open();
+            string consulta = $"select PorcentajeGanancia from Producto where id='{id}'";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            double porcentaje = Convert.ToDouble(comando.ExecuteScalar());
+            conexion.Close();
+            return porcentaje;
+
+
+        }
+
+        // Precio costo producto
+        public double precioCostoProducto(string id)
+        {
+
+            conexion.Open();
+            string consulta = $"select PrecioCosto from Producto where id='{id}'";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            double porcentaje = Convert.ToDouble(comando.ExecuteScalar());
+            conexion.Close();
+            return porcentaje;
+
+
+        }
+        // Cargar comprobante
+        public void cargarComprobante(string tipo, string Numero, string Fecha, string Empleado, string Cliente, string Monto) { 
+            
+            conexion.Open();
+            string consulta = $"insert into ComprobantesEmitidos (Tipo, Numero, Fecha, Empleado, Cliente, Monto) values ('{tipo}', '{Numero}', '{Fecha}', '{Empleado}', '{Cliente}', '{Monto}');";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+
+
+        }
+
+        // Sumar stock a un producto 
+        public void sumarStockProducto(string id, string cantidad)
+        {
+            conexion.Open();
+            string consulta = $"update Producto set Stock = Stock + {cantidad} where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+        // Restar stock a un producto
+        public void restarStockProducto(string id, string cantidad)
+        {
+            conexion.Open();
+            string consulta = $"update Producto set Stock = Stock - {cantidad} where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+        // Ver stock de un producto
+        public int verStockProducto(string id)
+        {
+            conexion.Open();
+            string consulta = $"select Stock from Producto where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            int stock = Convert.ToInt32(comando.ExecuteScalar());
+            conexion.Close();
+            return stock;
+        }
+
+    }
 }

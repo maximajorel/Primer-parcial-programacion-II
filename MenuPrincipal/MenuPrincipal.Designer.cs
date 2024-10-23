@@ -33,11 +33,17 @@
             botonCompraProducto = new Button();
             botonVentaDeProductos = new Button();
             botonConsultaMovimientos = new Button();
+            labelBienvenidaEstatico = new Label();
+            labelTituloRolUsuario = new Label();
+            labelRolUsuarioDinamico = new Label();
+            labelUsuarioDinamico = new Label();
+            buttonGestionarClientes = new Button();
+            buttonVerComprobantes = new Button();
             SuspendLayout();
             // 
             // BotonSalir
             // 
-            BotonSalir.Location = new Point(643, 415);
+            BotonSalir.Location = new Point(673, 421);
             BotonSalir.Name = "BotonSalir";
             BotonSalir.Size = new Size(145, 23);
             BotonSalir.TabIndex = 1;
@@ -47,7 +53,7 @@
             // 
             // botonActualizacionEmpleados
             // 
-            botonActualizacionEmpleados.Location = new Point(88, 130);
+            botonActualizacionEmpleados.Location = new Point(44, 131);
             botonActualizacionEmpleados.Name = "botonActualizacionEmpleados";
             botonActualizacionEmpleados.Size = new Size(189, 116);
             botonActualizacionEmpleados.TabIndex = 2;
@@ -57,7 +63,7 @@
             // 
             // botonCompraProducto
             // 
-            botonCompraProducto.Location = new Point(283, 130);
+            botonCompraProducto.Location = new Point(239, 131);
             botonCompraProducto.Name = "botonCompraProducto";
             botonCompraProducto.Size = new Size(189, 116);
             botonCompraProducto.TabIndex = 3;
@@ -67,7 +73,7 @@
             // 
             // botonVentaDeProductos
             // 
-            botonVentaDeProductos.Location = new Point(478, 130);
+            botonVentaDeProductos.Location = new Point(434, 131);
             botonVentaDeProductos.Name = "botonVentaDeProductos";
             botonVentaDeProductos.Size = new Size(189, 116);
             botonVentaDeProductos.TabIndex = 4;
@@ -77,20 +83,87 @@
             // 
             // botonConsultaMovimientos
             // 
-            botonConsultaMovimientos.Location = new Point(88, 252);
+            botonConsultaMovimientos.Location = new Point(629, 131);
             botonConsultaMovimientos.Name = "botonConsultaMovimientos";
             botonConsultaMovimientos.RightToLeft = RightToLeft.No;
-            botonConsultaMovimientos.Size = new Size(579, 37);
+            botonConsultaMovimientos.Size = new Size(189, 116);
             botonConsultaMovimientos.TabIndex = 5;
             botonConsultaMovimientos.Text = "Acciones de producto";
             botonConsultaMovimientos.UseVisualStyleBackColor = true;
             botonConsultaMovimientos.Click += botonConsultaMovimientos_Click;
             // 
+            // labelBienvenidaEstatico
+            // 
+            labelBienvenidaEstatico.AutoSize = true;
+            labelBienvenidaEstatico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelBienvenidaEstatico.Location = new Point(44, 35);
+            labelBienvenidaEstatico.Name = "labelBienvenidaEstatico";
+            labelBienvenidaEstatico.Size = new Size(262, 32);
+            labelBienvenidaEstatico.TabIndex = 6;
+            labelBienvenidaEstatico.Text = "Bienvenido de nuevo,";
+            // 
+            // labelTituloRolUsuario
+            // 
+            labelTituloRolUsuario.AutoSize = true;
+            labelTituloRolUsuario.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
+            labelTituloRolUsuario.Location = new Point(50, 67);
+            labelTituloRolUsuario.Name = "labelTituloRolUsuario";
+            labelTituloRolUsuario.Size = new Size(83, 13);
+            labelTituloRolUsuario.TabIndex = 7;
+            labelTituloRolUsuario.Text = "Rol de usuario:";
+            // 
+            // labelRolUsuarioDinamico
+            // 
+            labelRolUsuarioDinamico.AutoSize = true;
+            labelRolUsuarioDinamico.Font = new Font("Segoe UI Semibold", 8F, FontStyle.Bold);
+            labelRolUsuarioDinamico.Location = new Point(133, 67);
+            labelRolUsuarioDinamico.Name = "labelRolUsuarioDinamico";
+            labelRolUsuarioDinamico.Size = new Size(0, 13);
+            labelRolUsuarioDinamico.TabIndex = 8;
+            // 
+            // labelUsuarioDinamico
+            // 
+            labelUsuarioDinamico.AutoSize = true;
+            labelUsuarioDinamico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelUsuarioDinamico.Location = new Point(302, 35);
+            labelUsuarioDinamico.Name = "labelUsuarioDinamico";
+            labelUsuarioDinamico.Size = new Size(0, 32);
+            labelUsuarioDinamico.TabIndex = 9;
+            // 
+            // buttonGestionarClientes
+            // 
+            buttonGestionarClientes.Location = new Point(239, 253);
+            buttonGestionarClientes.Name = "buttonGestionarClientes";
+            buttonGestionarClientes.RightToLeft = RightToLeft.No;
+            buttonGestionarClientes.Size = new Size(189, 116);
+            buttonGestionarClientes.TabIndex = 10;
+            buttonGestionarClientes.Text = "Gestionar Clientes";
+            buttonGestionarClientes.UseVisualStyleBackColor = true;
+            buttonGestionarClientes.Click += buttonGestionarClientes_Click;
+            // 
+            // buttonVerComprobantes
+            // 
+            buttonVerComprobantes.Location = new Point(434, 253);
+            buttonVerComprobantes.Name = "buttonVerComprobantes";
+            buttonVerComprobantes.RightToLeft = RightToLeft.No;
+            buttonVerComprobantes.Size = new Size(189, 116);
+            buttonVerComprobantes.TabIndex = 11;
+            buttonVerComprobantes.Text = "Ver comprobantes";
+            buttonVerComprobantes.UseVisualStyleBackColor = true;
+            buttonVerComprobantes.Click += buttonVerComprobantes_Click;
+            // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.White;
+            ClientSize = new Size(868, 477);
+            Controls.Add(buttonVerComprobantes);
+            Controls.Add(buttonGestionarClientes);
+            Controls.Add(labelUsuarioDinamico);
+            Controls.Add(labelRolUsuarioDinamico);
+            Controls.Add(labelTituloRolUsuario);
+            Controls.Add(labelBienvenidaEstatico);
             Controls.Add(botonConsultaMovimientos);
             Controls.Add(botonVentaDeProductos);
             Controls.Add(botonCompraProducto);
@@ -100,6 +173,7 @@
             Text = "Menú Principal";
             Load += MenuPrincipal_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -108,5 +182,11 @@
         private Button botonCompraProducto;
         private Button botonVentaDeProductos;
         private Button botonConsultaMovimientos;
+        private Label labelBienvenidaEstatico;
+        private Label labelTituloRolUsuario;
+        private Label labelRolUsuarioDinamico;
+        private Label labelUsuarioDinamico;
+        private Button buttonGestionarClientes;
+        private Button buttonVerComprobantes;
     }
 }

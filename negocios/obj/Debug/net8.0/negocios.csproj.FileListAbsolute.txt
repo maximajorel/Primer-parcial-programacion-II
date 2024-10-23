@@ -1,0 +1,12 @@
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\bin\Debug\net8.0\negocios.deps.json
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\bin\Debug\net8.0\negocios.dll
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\bin\Debug\net8.0\negocios.pdb
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.AssemblyInfoInputs.cache
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.AssemblyInfo.cs
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.csproj.CoreCompileInputs.cache
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.sourcelink.json
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.dll
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\refint\negocios.dll
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\negocios.pdb
+C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\negocios\obj\Debug\net8.0\ref\negocios.dll
