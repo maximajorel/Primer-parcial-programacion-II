@@ -67,11 +67,12 @@ namespace MenuPrincipal
             else
             {
                 labelRolUsuarioDinamico.Text = "No tiene rol asignado, contactese con el administrador";
-                botonActualizacionEmpleados.Enabled = false;
-                botonCompraProducto.Enabled = false;
-                botonConsultaMovimientos.Enabled = false;
-                botonVentaDeProductos.Enabled = false;
-                buttonVerComprobantes.Enabled = false;
+                //botonActualizacionEmpleados.Enabled = false;
+                //botonCompraProducto.Enabled = false;
+                //botonConsultaMovimientos.Enabled = false;
+                //botonVentaDeProductos.Enabled = false;
+                //buttonVerComprobantes.Enabled = false;
+                //buttonGestionarClientes.Enabled = false;
 
             }
         }
@@ -79,8 +80,11 @@ namespace MenuPrincipal
         {
 
             ConexionSQL_Negocio obtenernombre = new ConexionSQL_Negocio();
-            string usuario = "Anonimo";
+            string usuario;
             usuario = obtenernombre.nombreyApellido(this.usuario, this.contraseña);
+            if (usuario == "") {
+                usuario = "Invitado";
+            }
             labelUsuarioDinamico.Text = usuario;
 
 

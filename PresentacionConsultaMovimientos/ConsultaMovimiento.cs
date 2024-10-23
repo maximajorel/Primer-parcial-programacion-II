@@ -64,10 +64,11 @@ namespace PresentacionConsultaMovimientos
             textboxCodigoProducto.Text = tablaProductos.SelectedCells[1].Value.ToString();
             textBoxNombreProducto.Text = tablaProductos.SelectedCells[2].Value.ToString();
             textBoxNombreCortoProducto.Text = tablaProductos.SelectedCells[3].Value.ToString();
-            textBoxPrecioCosto.Text = tablaProductos.SelectedCells[4].Value.ToString().Replace(",", ".");
-            numericStockActual.Text = tablaProductos.SelectedCells[5].Value.ToString().Replace(",", ".");
-            numericStockMinimo.Text = tablaProductos.SelectedCells[6].Value.ToString().Replace(",", ".");
+            textBoxPrecioCosto.Text = tablaProductos.SelectedCells[4].Value.ToString();
+            numericStockActual.Text = tablaProductos.SelectedCells[5].Value.ToString();
+            numericStockMinimo.Text = tablaProductos.SelectedCells[6].Value.ToString();
             numericPorcentajeGanancia.Text = tablaProductos.SelectedCells[7].Value.ToString();
+
 
 
 

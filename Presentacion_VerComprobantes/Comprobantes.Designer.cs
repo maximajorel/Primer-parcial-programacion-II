@@ -34,10 +34,11 @@
             // 
             // dataGridComprobantes
             // 
+            dataGridComprobantes.BackgroundColor = Color.White;
             dataGridComprobantes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridComprobantes.Location = new Point(2, 36);
+            dataGridComprobantes.Location = new Point(2, 0);
             dataGridComprobantes.Name = "dataGridComprobantes";
-            dataGridComprobantes.Size = new Size(798, 369);
+            dataGridComprobantes.Size = new Size(798, 451);
             dataGridComprobantes.TabIndex = 0;
             // 
             // formVerComprobantes

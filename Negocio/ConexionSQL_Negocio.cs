@@ -121,6 +121,14 @@ namespace Negocio
 
 
         }
+        public void restarStockProducto(string id, string cantidad)
+        {
+            conexion.restarStockProducto(id, cantidad);
+        }
+        public int verStockProducto(string id)
+        {
+            return conexion.verStockProducto(id);
+        }
 
 
 

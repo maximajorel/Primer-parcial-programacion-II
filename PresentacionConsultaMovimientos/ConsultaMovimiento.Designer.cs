@@ -272,7 +272,7 @@
             Controls.Add(LabelID);
             Controls.Add(tablaProductos);
             Name = "ConsultaMovimiento";
-            Text = "Form1";
+            Text = "Consulta de movimientos";
             Load += ConsultaMovimiento_Load;
             ((System.ComponentModel.ISupportInitialize)tablaProductos).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericPorcentajeGanancia).EndInit();

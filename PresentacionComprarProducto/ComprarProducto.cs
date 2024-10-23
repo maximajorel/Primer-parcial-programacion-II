@@ -116,7 +116,7 @@ namespace PresentacionComprarProducto
 
         private void buttonCargarFactura_Click(object sender, EventArgs e)
         {
-            if (textBoxIDProducto.Text == "" || textBoxNumeroFactura.Text == "" || texboxTipoComprobante.Text == "" || dateTimePicker1.Text == "" || comboBoxEmpleados.Text == "" || comboBoxNombreClientes.Text == "")
+            if (textBoxIDProducto.Text == "" || textBoxNumeroFactura.Text == "" || texboxTipoComprobante.Text == "" || dateTimePicker1.Text == "" || comboBoxEmpleados.Text == "" || comboBoxNombreClientes.Text == "" )
             {
 
                 MessageBox.Show("Por favor llene todos los campos");    

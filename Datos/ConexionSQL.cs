@@ -345,5 +345,25 @@ namespace Datos
             comando.ExecuteNonQuery();
             conexion.Close();
         }
+        // Restar stock a un producto
+        public void restarStockProducto(string id, string cantidad)
+        {
+            conexion.Open();
+            string consulta = $"update Producto set Stock = Stock - {cantidad} where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+        }
+        // Ver stock de un producto
+        public int verStockProducto(string id)
+        {
+            conexion.Open();
+            string consulta = $"select Stock from Producto where id = {id}";
+            SqlCommand comando = new SqlCommand(consulta, conexion);
+            int stock = Convert.ToInt32(comando.ExecuteScalar());
+            conexion.Close();
+            return stock;
+        }
+
     }
 }

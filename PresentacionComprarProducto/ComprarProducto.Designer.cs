@@ -168,6 +168,7 @@
             // numericUpCantidadProducto
             // 
             numericUpCantidadProducto.Location = new Point(97, 472);
+            numericUpCantidadProducto.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpCantidadProducto.Name = "numericUpCantidadProducto";
             numericUpCantidadProducto.Size = new Size(164, 23);
             numericUpCantidadProducto.TabIndex = 12;
