@@ -55,7 +55,7 @@ namespace PresentacionComprarProducto
             textBoxNumeroFactura.Text = "";
             comboBoxEmpleados.Text = "";
             comboBoxNombreClientes.Text = "";
-            numericUpCantidadProducto.Value = 0;
+            numericUpCantidadProducto.Value = 1;
             labelTotalCompraProducto.Text = "0";
 
 
@@ -116,18 +116,19 @@ namespace PresentacionComprarProducto
 
         private void buttonCargarFactura_Click(object sender, EventArgs e)
         {
-            if (textBoxIDProducto.Text == "" || textBoxNumeroFactura.Text == "" || texboxTipoComprobante.Text == "" || dateTimePicker1.Text == "" || comboBoxEmpleados.Text == "" || comboBoxNombreClientes.Text == "" )
+            if (textBoxIDProducto.Text == "" || textBoxNumeroFactura.Text == "" || texboxTipoComprobante.Text == "" || dateTimePicker1.Text == "" || comboBoxEmpleados.Text == "" || comboBoxNombreClientes.Text == "")
             {
 
-                MessageBox.Show("Por favor llene todos los campos");    
+                MessageBox.Show("Por favor llene todos los campos");
 
 
 
             }
-            else {
+            else
+            {
                 ConexionSQL_Negocio cargarFactura = new ConexionSQL_Negocio();
                 RealizarCalculo();
-                string Tipo = texboxTipoComprobante.Text;
+                string Tipo = texboxTipoComprobante.Text + " - Compra";
                 string NumeroFactura = textBoxNumeroFactura.Text;
                 string Fecha = dateTimePicker1.Value.ToString("yyyy-MM-dd");
                 string NombreCliente = comboBoxNombreClientes.Text;
@@ -139,6 +140,11 @@ namespace PresentacionComprarProducto
                 MessageBox.Show("Compra Realizada con exito");
             }
 
+
+        }
+
+        private void comboBoxEmpleados_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -75,6 +75,7 @@
             comboBoxEmpleados.Name = "comboBoxEmpleados";
             comboBoxEmpleados.Size = new Size(164, 23);
             comboBoxEmpleados.TabIndex = 1;
+            comboBoxEmpleados.SelectedIndexChanged += comboBoxEmpleados_SelectedIndexChanged;
             // 
             // LabelID
             // 

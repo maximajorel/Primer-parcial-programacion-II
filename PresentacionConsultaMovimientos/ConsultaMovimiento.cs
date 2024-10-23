@@ -90,7 +90,17 @@ namespace PresentacionConsultaMovimientos
             }
             else {
                 ConexionSQL_Negocio editarProducto = new ConexionSQL_Negocio();
-                editarProducto.editarProducto(textboxID.Text, textboxCodigoProducto.Text, textBoxNombreProducto.Text, textBoxNombreCortoProducto.Text, textBoxPrecioCosto.Text, numericStockActual.Text, numericStockMinimo.Text, numericPorcentajeGanancia.Text);
+                string idProducto = textboxID.Text;
+                string codigoProducto = textboxCodigoProducto.Text;
+                string nombreProducto = textBoxNombreProducto.Text;
+                string nombreCortoProducto = textBoxNombreCortoProducto.Text;
+                string precioCosto = textBoxPrecioCosto.Text;
+                string stockActual = Convert.ToString(numericStockActual.Value);
+                string stockMinimo = Convert.ToString(numericStockMinimo.Value);
+                string porcentajeGanancia = Convert.ToString(numericPorcentajeGanancia.Value);
+
+                editarProducto.editarProducto(idProducto, codigoProducto, nombreProducto, nombreCortoProducto, precioCosto, stockActual, stockMinimo, porcentajeGanancia);
+
                 MessageBox.Show("Producto editado correctamente");
                 actualizarTabla();
                 limpiarCampos();

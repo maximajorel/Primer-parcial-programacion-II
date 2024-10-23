@@ -84,7 +84,7 @@ namespace Datos
         {
 
             conexion.Open();
-            string consulta = "SELECT NombreProducto, Stock, PrecioCosto, PorcentajeGanancia from Producto";
+            string consulta = "SELECT id,NombreProducto, Stock, PrecioCosto, PorcentajeGanancia from Producto";
             SqlDataAdapter adapter = new SqlDataAdapter(consulta, conexion);
             DataTable tabla = new DataTable();
             adapter.Fill(tabla);

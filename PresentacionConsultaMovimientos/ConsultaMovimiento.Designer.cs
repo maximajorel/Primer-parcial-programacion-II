@@ -234,6 +234,7 @@
             // numericStockActual
             // 
             numericStockActual.Location = new Point(147, 514);
+            numericStockActual.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             numericStockActual.Name = "numericStockActual";
             numericStockActual.Size = new Size(212, 23);
             numericStockActual.TabIndex = 26;
@@ -241,6 +242,7 @@
             // numericStockMinimo
             // 
             numericStockMinimo.Location = new Point(510, 514);
+            numericStockMinimo.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             numericStockMinimo.Name = "numericStockMinimo";
             numericStockMinimo.Size = new Size(266, 23);
             numericStockMinimo.TabIndex = 27;
