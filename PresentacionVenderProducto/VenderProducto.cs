@@ -95,6 +95,8 @@ namespace PresentacionVenderProducto
             string nombreEmpleado = comboBoxVendedor.Text;
             string nombreCliente = textBoxApellidoNombre.Text;
             string montoTotal = calcularTotal().ToString();
+            
+            montoTotal = montoTotal.Replace(",", ".");
 
             realizarVenta.cargarComprobante(Tipo, numeroFactura, Fecha, nombreEmpleado, nombreCliente, montoTotal);
             realizarVenta.restarStockProducto(textBoxIdProducto.Text, numericUpDownCantidadProducto.Text);
