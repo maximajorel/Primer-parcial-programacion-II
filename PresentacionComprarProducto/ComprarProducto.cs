@@ -134,6 +134,7 @@ namespace PresentacionComprarProducto
                 string NombreCliente = comboBoxNombreClientes.Text;
                 string NombreEmpleado = comboBoxEmpleados.Text;
                 string montoTotal = labelTotalCompraProducto.Text;
+                montoTotal = montoTotal.Replace(",", ".");
                 cargarFactura.cargarComprobante(Tipo, NumeroFactura, Fecha, NombreEmpleado, NombreCliente, montoTotal);
                 cargarFactura.actualizarStock(textBoxIDProducto.Text, numericUpCantidadProducto.Text);
                 limpiarCampos();
