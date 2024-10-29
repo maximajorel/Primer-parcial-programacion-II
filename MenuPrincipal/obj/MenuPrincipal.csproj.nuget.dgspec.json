@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Curso UTN\\PrimerParcialFac\\MenuPrincipal\\MenuPrincipal.csproj": {}
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj": {}
   },
   "projects": {
-    "D:\\Curso UTN\\PrimerParcialFac\\Datos\\Datos.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\Datos\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -70,24 +70,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\MenuPrincipal\\MenuPrincipal.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\MenuPrincipal\\MenuPrincipal.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj",
         "projectName": "MenuPrincipal",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\MenuPrincipal\\MenuPrincipal.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\MenuPrincipal\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\MenuPrincipal\\MenuPrincipal.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\MenuPrincipal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,23 +102,23 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj"
               },
-              "D:\\Curso UTN\\PrimerParcialFac\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj"
               },
-              "D:\\Curso UTN\\PrimerParcialFac\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj"
               },
-              "D:\\Curso UTN\\PrimerParcialFac\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj"
               },
-              "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj"
               },
-              "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj"
               }
             }
           }
@@ -156,24 +156,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -188,8 +188,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Datos\\Datos.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Datos\\Datos.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj"
               }
             }
           }
@@ -230,24 +230,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
         "projectName": "PresentacionActualizarRoles",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -262,8 +262,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -301,24 +301,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj",
         "projectName": "PresentacionComprarProducto",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionComprarProducto\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionComprarProducto\\PresentacionComprarProducto.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionComprarProducto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -333,8 +333,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -372,24 +372,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
         "projectName": "PresentacionConsultaMovimientos",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionConsultaMovimientos\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -404,8 +404,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -443,24 +443,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj",
         "projectName": "PresentacionVenderProducto",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionVenderProducto\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionVenderProducto\\PresentacionVenderProducto.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionVenderProducto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -475,8 +475,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -514,24 +514,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj",
         "projectName": "Presentacion_AgregarCliente",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_AgregarCliente\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_AgregarCliente\\Presentacion_AgregarCliente.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_AgregarCliente\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -546,8 +546,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -585,24 +585,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj",
         "projectName": "Presentacion_VerComprobantes",
-        "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj",
-        "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
-        "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\Presentacion_VerComprobantes\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_VerComprobantes\\Presentacion_VerComprobantes.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Presentacion_VerComprobantes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -617,8 +617,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -656,7 +656,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

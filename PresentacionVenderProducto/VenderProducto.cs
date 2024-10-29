@@ -22,7 +22,8 @@ namespace PresentacionVenderProducto
             return precioFinal;
 
         }
-        private void actualizarTablas() {
+        private void actualizarTablas()
+        {
             ConexionSQL_Negocio conexion = new ConexionSQL_Negocio();
             DataTable tabla = conexion.verVentaProducto();
             tablaProductos.DataSource = tabla;
@@ -38,13 +39,16 @@ namespace PresentacionVenderProducto
             labelTotalProductoFinal.Text = "$0";
         }
         public List<string> listaEmpleados;
-        private void obtenerNombreEmpleados() {
+        private void obtenerNombreEmpleados()
+        {
             ConexionSQL_Negocio conexion = new ConexionSQL_Negocio();
-             listaEmpleados = conexion.obtenerNombresEmpleados();
+            listaEmpleados = conexion.obtenerNombresEmpleados();
         }
-        private void llenarNombreEmpleados() {
+        private void llenarNombreEmpleados()
+        {
 
-            foreach (string nombre in listaEmpleados) {
+            foreach (string nombre in listaEmpleados)
+            {
                 comboBoxVendedor.Items.Add(nombre);
             }
         }
@@ -95,7 +99,7 @@ namespace PresentacionVenderProducto
             string nombreEmpleado = comboBoxVendedor.Text;
             string nombreCliente = textBoxApellidoNombre.Text;
             string montoTotal = calcularTotal().ToString();
-            
+
             montoTotal = montoTotal.Replace(",", ".");
 
             realizarVenta.cargarComprobante(Tipo, numeroFactura, Fecha, nombreEmpleado, nombreCliente, montoTotal);
@@ -103,6 +107,16 @@ namespace PresentacionVenderProducto
             MessageBox.Show("Venta realizada con exito");
             actualizarTablas();
             limpiarCampos();
+
+        }
+
+        private void textBoxTipoFactura_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten letras en el tipo de factura");
+            }
 
         }
     }

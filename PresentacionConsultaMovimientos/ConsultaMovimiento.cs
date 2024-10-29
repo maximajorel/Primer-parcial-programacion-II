@@ -88,7 +88,8 @@ namespace PresentacionConsultaMovimientos
             {
                 MessageBox.Show("Seleccione un producto para editar");
             }
-            else {
+            else
+            {
                 ConexionSQL_Negocio editarProducto = new ConexionSQL_Negocio();
                 string idProducto = textboxID.Text;
                 string codigoProducto = textboxCodigoProducto.Text;
@@ -117,7 +118,8 @@ namespace PresentacionConsultaMovimientos
             {
                 MessageBox.Show("Seleccione un producto para editar");
             }
-            else {
+            else
+            {
                 ConexionSQL_Negocio eliminarProducto = new ConexionSQL_Negocio();
                 eliminarProducto.eliminarProducto(textboxID.Text);
                 MessageBox.Show("Producto eliminado correctamente");
@@ -127,6 +129,36 @@ namespace PresentacionConsultaMovimientos
             }
 
 
+        }
+
+        private void textboxCodigoProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxCodigoProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validacion solo se puede ingresar numeros, no se permite letras o caracteres especiales
+            if (char.IsLetter(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros en el codigo de producto");
+            }
+        }
+
+        private void textBoxPrecioCosto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPrecioCosto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validacion solo se permite numeros
+            if (char.IsLetter(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros en el precio de costo");
+            }
         }
     }
 }

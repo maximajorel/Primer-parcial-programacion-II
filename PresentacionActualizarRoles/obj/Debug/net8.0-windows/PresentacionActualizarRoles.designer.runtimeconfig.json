@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\tucom\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tucom\\.nuget\\packages",
+      "C:\\Users\\maximajorel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\maximajorel\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

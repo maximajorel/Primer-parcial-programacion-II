@@ -97,6 +97,7 @@
             textboxNombre.Name = "textboxNombre";
             textboxNombre.Size = new Size(143, 23);
             textboxNombre.TabIndex = 6;
+            textboxNombre.KeyPress += textboxNombre_KeyPress;
             // 
             // labelApellido
             // 
@@ -114,6 +115,8 @@
             textboxApellido.Name = "textboxApellido";
             textboxApellido.Size = new Size(234, 23);
             textboxApellido.TabIndex = 8;
+            textboxApellido.TextChanged += textboxApellido_TextChanged;
+            textboxApellido.KeyPress += textboxApellido_KeyPress;
             // 
             // label1
             // 
@@ -131,6 +134,8 @@
             textboxTelefono.Name = "textboxTelefono";
             textboxTelefono.Size = new Size(143, 23);
             textboxTelefono.TabIndex = 10;
+            textboxTelefono.TextChanged += textboxTelefono_TextChanged;
+            textboxTelefono.KeyPress += textboxTelefono_KeyPress;
             // 
             // labelFechaNac
             // 

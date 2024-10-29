@@ -93,6 +93,7 @@
             textBoxNumeroFactura.Name = "textBoxNumeroFactura";
             textBoxNumeroFactura.Size = new Size(100, 23);
             textBoxNumeroFactura.TabIndex = 3;
+            textBoxNumeroFactura.KeyPress += textBoxNumeroFactura_KeyPress;
             // 
             // label1
             // 
@@ -107,9 +108,11 @@
             // texboxTipoComprobante
             // 
             texboxTipoComprobante.Location = new Point(58, 332);
+            texboxTipoComprobante.MaxLength = 1;
             texboxTipoComprobante.Name = "texboxTipoComprobante";
             texboxTipoComprobante.Size = new Size(203, 23);
             texboxTipoComprobante.TabIndex = 5;
+            texboxTipoComprobante.KeyUp += texboxTipoComprobante_KeyUp;
             // 
             // label2
             // 

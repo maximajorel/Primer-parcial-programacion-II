@@ -13,7 +13,7 @@ namespace PresentacionActualizarRoles
 
         }
         // Deshabilitar botones si los campos de textos se encuentran vacios
-        
+
         public void LimpiarCajas()
         {
             textboxID.Text = "";
@@ -98,7 +98,8 @@ namespace PresentacionActualizarRoles
             {
                 MessageBox.Show("Seleccione un usuario para eliminar");
             }
-            else {
+            else
+            {
                 // Eliminar usuario
                 ConexionSQL_Negocio eliminarUsuario = new ConexionSQL_Negocio();
                 eliminarUsuario.eliminarUsuario(textboxID.Text);
@@ -117,7 +118,8 @@ namespace PresentacionActualizarRoles
             {
                 MessageBox.Show("Seleccione un usuario para editar");
             }
-            else {
+            else
+            {
                 // Editar usuario
                 ConexionSQL_Negocio editarUsuario = new ConexionSQL_Negocio();
                 string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
@@ -134,6 +136,75 @@ namespace PresentacionActualizarRoles
         {
             volvermenu = true;
             this.Hide();
+        }
+
+        private void textboxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validar que solo se ingresen numeros enteros
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textboxNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validar que no se ingresen numeros o caracteres especiales
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textboxApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validar que no se ingresen numeros o caracteres especiales
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

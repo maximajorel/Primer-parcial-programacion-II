@@ -16,7 +16,7 @@ namespace Datos
 {
     public class ConexionSql
     {
-        static string stringConexion = "server= DESKTOP-RME9LD8\\SQLEXPRESS;database= primerparcial;integrated security =true;TrustServerCertificate=True;";
+        static string stringConexion = "server= NOTEBOOK-MAXI\\SQLEXPRESS;database= primerparcial;integrated security =true;TrustServerCertificate=True;";
         SqlConnection conexion = new SqlConnection(stringConexion);
 
         // Funcion para consultar login

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Presentacion_VerComprobantes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b0fdf6fb78043c9e7194b44a0747268386c9bb3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+886a01f60a4beef92056a6e13282f418d4aeba80")]
 [assembly: System.Reflection.AssemblyProductAttribute("Presentacion_VerComprobantes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Presentacion_VerComprobantes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

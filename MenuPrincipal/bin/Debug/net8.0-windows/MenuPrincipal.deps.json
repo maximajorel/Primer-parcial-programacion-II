@@ -348,7 +348,10 @@
           "Microsoft.Data.SqlClient": "5.2.2"
         },
         "runtime": {
-          "Datos.dll": {}
+          "Datos.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Negocio/1.0.0": {
@@ -357,7 +360,10 @@
           "Microsoft.Data.SqlClient": "5.2.2"
         },
         "runtime": {
-          "Negocio.dll": {}
+          "Negocio.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PresentacionActualizarRoles/1.0.0": {
@@ -365,7 +371,10 @@
           "Negocio": "1.0.0"
         },
         "runtime": {
-          "PresentacionActualizarRoles.dll": {}
+          "PresentacionActualizarRoles.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PresentacionComprarProducto/1.0.0": {
@@ -373,7 +382,10 @@
           "Negocio": "1.0.0"
         },
         "runtime": {
-          "PresentacionComprarProducto.dll": {}
+          "PresentacionComprarProducto.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PresentacionConsultaMovimientos/1.0.0": {
@@ -381,7 +393,10 @@
           "Negocio": "1.0.0"
         },
         "runtime": {
-          "PresentacionConsultaMovimientos.dll": {}
+          "PresentacionConsultaMovimientos.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PresentacionVenderProducto/1.0.0": {
@@ -389,7 +404,10 @@
           "Negocio": "1.0.0"
         },
         "runtime": {
-          "PresentacionVenderProducto.dll": {}
+          "PresentacionVenderProducto.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Presentacion_AgregarCliente/1.0.0": {
@@ -397,7 +415,10 @@
           "Negocio": "1.0.0"
         },
         "runtime": {
-          "Presentacion_AgregarCliente.dll": {}
+          "Presentacion_AgregarCliente.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Presentacion_VerComprobantes/1.0.0": {
@@ -405,7 +426,10 @@
           "Negocio": "1.0.0"
         },
         "runtime": {
-          "Presentacion_VerComprobantes.dll": {}
+          "Presentacion_VerComprobantes.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
