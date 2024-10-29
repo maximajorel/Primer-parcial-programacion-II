@@ -1724,23 +1724,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maximajorel\\.nuget\\packages\\": {},
+    "C:\\Users\\tucom\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maximajorel\\Downloads\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
+      "projectUniqueName": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
       "projectName": "PresentacionActualizarRoles",
-      "projectPath": "C:\\Users\\maximajorel\\Downloads\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
-      "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maximajorel\\Downloads\\Primer-parcial-programacion-II\\PresentacionActualizarRoles\\obj\\",
+      "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\PresentacionActualizarRoles.csproj",
+      "packagesPath": "C:\\Users\\tucom\\.nuget\\packages\\",
+      "outputPath": "D:\\Curso UTN\\PrimerParcialFac\\PresentacionActualizarRoles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tucom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1755,8 +1755,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\maximajorel\\Downloads\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
-              "projectPath": "C:\\Users\\maximajorel\\Downloads\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
+            "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj": {
+              "projectPath": "D:\\Curso UTN\\PrimerParcialFac\\Negocio\\Negocio.csproj"
             }
           }
         }
@@ -1794,7 +1794,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

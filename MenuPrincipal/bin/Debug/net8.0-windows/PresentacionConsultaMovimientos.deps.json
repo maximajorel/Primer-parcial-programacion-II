@@ -343,10 +343,7 @@
           "Microsoft.Data.SqlClient": "5.2.2"
         },
         "runtime": {
-          "Datos.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Datos.dll": {}
         }
       },
       "Negocio/1.0.0": {
@@ -355,10 +352,7 @@
           "Microsoft.Data.SqlClient": "5.2.2"
         },
         "runtime": {
-          "Negocio.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Negocio.dll": {}
         }
       }
     }

@@ -29,7 +29,7 @@ namespace PrimerParcial
             }
             else
             {
-                MessageBox.Show("Dato incorrecto");
+                MessageBox.Show("El usuario o la contraseña es incorrecto");
             }
         }
 
