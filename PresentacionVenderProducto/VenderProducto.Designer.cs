@@ -60,6 +60,7 @@
             // 
             tablaProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             tablaProductos.Location = new Point(12, 12);
+            tablaProductos.MultiSelect = false;
             tablaProductos.Name = "tablaProductos";
             tablaProductos.ReadOnly = true;
             tablaProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -247,9 +248,11 @@
             // textBoxTipoFactura
             // 
             textBoxTipoFactura.Location = new Point(808, 381);
+            textBoxTipoFactura.MaxLength = 1;
             textBoxTipoFactura.Name = "textBoxTipoFactura";
             textBoxTipoFactura.Size = new Size(386, 23);
             textBoxTipoFactura.TabIndex = 22;
+            textBoxTipoFactura.KeyPress += textBoxTipoFactura_KeyPress;
             // 
             // label7
             // 

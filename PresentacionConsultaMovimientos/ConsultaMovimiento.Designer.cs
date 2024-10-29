@@ -102,6 +102,8 @@
             textboxCodigoProducto.Name = "textboxCodigoProducto";
             textboxCodigoProducto.Size = new Size(143, 23);
             textboxCodigoProducto.TabIndex = 6;
+            textboxCodigoProducto.TextChanged += textboxCodigoProducto_TextChanged;
+            textboxCodigoProducto.KeyPress += textboxCodigoProducto_KeyPress;
             // 
             // labelNombreProductoLargo
             // 
@@ -153,6 +155,8 @@
             textBoxPrecioCosto.Name = "textBoxPrecioCosto";
             textBoxPrecioCosto.Size = new Size(212, 23);
             textBoxPrecioCosto.TabIndex = 12;
+            textBoxPrecioCosto.TextChanged += textBoxPrecioCosto_TextChanged;
+            textBoxPrecioCosto.KeyPress += textBoxPrecioCosto_KeyPress;
             // 
             // labelStock
             // 

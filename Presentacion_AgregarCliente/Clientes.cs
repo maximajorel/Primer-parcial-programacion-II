@@ -29,15 +29,30 @@ namespace Presentacion_AgregarCliente
         // Click agregar cliente
         private void botonAgregarCliente_Click(object sender, EventArgs e)
         {
-            
-            string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
+            DateTime fechaNac = calendarioFechaNac.Value;
+            DateTime maxFechaNac = new DateTime(2010, 12, 31);
 
-            Negocio.ConexionSQL_Negocio conexion = new Negocio.ConexionSQL_Negocio();
-            conexion.agregarCliente(textboxNombre.Text, textboxApellido.Text, textboxTelefono.Text, fechaNac, numericDescuento.Text);
-            dataGridClientes.DataSource = conexion.verClientes();
-            MessageBox.Show("Cliente agregado con exito");
+            if (fechaNac > maxFechaNac)
+            {
+                MessageBox.Show("La fecha de nacimiento no puede ser posterior a 2010.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textboxNombre.Text) ||
+                string.IsNullOrWhiteSpace(textboxApellido.Text) ||
+                string.IsNullOrWhiteSpace(textboxTelefono.Text) ||
+                string.IsNullOrWhiteSpace(numericDescuento.Text))
+            {
+                MessageBox.Show("Por favor, llene todos los campos obligatorios.");
+            }
+            else
+            {
+                string fechaNacStr = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
+                Negocio.ConexionSQL_Negocio conexion = new Negocio.ConexionSQL_Negocio();
+                conexion.agregarCliente(textboxNombre.Text, textboxApellido.Text, textboxTelefono.Text, fechaNacStr, numericDescuento.Text);
+                dataGridClientes.DataSource = conexion.verClientes();
+                MessageBox.Show("Cliente agregado con éxito");
+            }
         }
-
         private void dataGridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Rellenar campos de texto segun la fila seleccionada
@@ -62,7 +77,8 @@ namespace Presentacion_AgregarCliente
             {
                 MessageBox.Show("Seleccione un cliente para editar");
             }
-            else {
+            else
+            {
                 string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
                 Negocio.ConexionSQL_Negocio conexion = new Negocio.ConexionSQL_Negocio();
                 conexion.editarCliente(textboxID.Text, textboxNombre.Text, textboxApellido.Text, textboxTelefono.Text, fechaNac, numericDescuento.Text);
@@ -75,11 +91,12 @@ namespace Presentacion_AgregarCliente
 
         private void buttonEliminarCliente_Click(object sender, EventArgs e)
         {
-            if (textboxID.Text == "") { 
+            if (textboxID.Text == "")
+            {
                 MessageBox.Show("Seleccione un cliente para eliminar");
             }
-            
-            else 
+
+            else
             {
 
                 Negocio.ConexionSQL_Negocio conexion = new Negocio.ConexionSQL_Negocio();
@@ -89,6 +106,46 @@ namespace Presentacion_AgregarCliente
                 MessageBox.Show("Cliente eliminado con exito");
             }
 
+        }
+
+        private void textboxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // No permitir numeros en el nombre o caracteres especiales
+            if (char.IsDigit(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten números o caracteres especiales en el nombre");
+            }
+        }
+
+        private void textboxApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // No permitir numeros en el nombre o caracteres especiales
+            if (char.IsDigit(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten números o caracteres especiales en el nombre");
+            }
+        }
+
+        private void textboxTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // No permitir letras en el telefono o caracteres especiales
+            if (char.IsLetter(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsPunctuation(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("No se permiten letras o caracteres especiales en el teléfono");
+            }
         }
     }
 }

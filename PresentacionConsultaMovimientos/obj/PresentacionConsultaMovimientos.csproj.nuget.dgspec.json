@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {}
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Datos\\Datos.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Datos\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,6 +25,7 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,20 +74,20 @@
         }
       }
     },
-    "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj",
-        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,14 +95,15 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Datos\\Datos.csproj": {
-                "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Datos\\Datos.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Datos\\Datos.csproj"
               }
             }
           }
@@ -146,20 +148,20 @@
         }
       }
     },
-    "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {
+    "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
+        "projectUniqueName": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
         "projectName": "PresentacionConsultaMovimientos",
-        "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
-        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\obj\\",
+        "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\PresentacionConsultaMovimientos.csproj",
+        "packagesPath": "C:\\Users\\maximajorel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\PresentacionConsultaMovimientos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maximajorel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -167,14 +169,15 @@
           "net8.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
-                "projectPath": "D:\\Documentos\\Repositorio\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
+              "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\maximajorel\\Desktop\\Primer parcial Programacion\\Primer-parcial-programacion-II\\Negocio\\Negocio.csproj"
               }
             }
           }

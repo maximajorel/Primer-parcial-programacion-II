@@ -112,3 +112,117 @@ C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\PresentacionConsul
 C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
 C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.genruntimeconfig.cache
 C:\Users\maximajorel\Downloads\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\ref\PresentacionConsultaMovimientos.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.exe
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.deps.json
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.runtimeconfig.json
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Datos.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Negocio.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Negocio.pdb
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Datos.pdb
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.AssemblyReference.cache
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.ConsultaMovimiento.resources
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.GenerateResource.cache
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.AssemblyInfoInputs.cache
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.AssemblyInfo.cs
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.CoreCompileInputs.cache
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.sourcelink.json
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\Presenta.716F34DF.Up2Date
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\refint\PresentacionConsultaMovimientos.dll
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.genruntimeconfig.cache
+D:\Curso UTN\PrimerParcialFac\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\ref\PresentacionConsultaMovimientos.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.exe
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.deps.json
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.runtimeconfig.json
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Datos.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Negocio.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Negocio.pdb
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\bin\Debug\net8.0-windows\Datos.pdb
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.AssemblyReference.cache
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.ConsultaMovimiento.resources
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.GenerateResource.cache
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.AssemblyInfoInputs.cache
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.AssemblyInfo.cs
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.csproj.CoreCompileInputs.cache
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.sourcelink.json
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\Presenta.716F34DF.Up2Date
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\refint\PresentacionConsultaMovimientos.dll
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.pdb
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\PresentacionConsultaMovimientos.genruntimeconfig.cache
+C:\Users\maximajorel\Desktop\Primer parcial Programacion\Primer-parcial-programacion-II\PresentacionConsultaMovimientos\obj\Debug\net8.0-windows\ref\PresentacionConsultaMovimientos.dll

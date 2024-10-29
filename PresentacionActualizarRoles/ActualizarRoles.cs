@@ -13,7 +13,7 @@ namespace PresentacionActualizarRoles
 
         }
         // Deshabilitar botones si los campos de textos se encuentran vacios
-        
+
         public void LimpiarCajas()
         {
             textboxID.Text = "";
@@ -63,19 +63,32 @@ namespace PresentacionActualizarRoles
 
         private void botonAgregarUsuario_Click(object sender, EventArgs e)
         {
+            DateTime fechaNac = calendarioFechaNac.Value;
+            DateTime maxFechaNac = new DateTime(2010, 12, 31);
 
-            ConexionSQL_Negocio agregarUsuario = new ConexionSQL_Negocio();
-
-            string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
-
-
-            agregarUsuario.agregarUsuario(textboxApellido.Text, textboxNombre.Text, textboxTelefono.Text, fechaNac, textboxUsuario.Text, textboxContraseña.Text, comboboxRolUsuario.Text);
-            LimpiarCajas();
-            actualizarDatos();
-            // Mostrar mensaje de tarea realizada con exito
-
-            MessageBox.Show("Usuario agregado con exito");
-
+            if (fechaNac > maxFechaNac)
+            {
+                MessageBox.Show("La fecha de nacimiento no puede ser posterior a 2010.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textboxApellido.Text) ||
+                string.IsNullOrWhiteSpace(textboxNombre.Text) ||
+                string.IsNullOrWhiteSpace(textboxTelefono.Text) ||
+                string.IsNullOrWhiteSpace(textboxUsuario.Text) ||
+                string.IsNullOrWhiteSpace(textboxContraseña.Text) ||
+                string.IsNullOrWhiteSpace(comboboxRolUsuario.Text))
+            {
+                MessageBox.Show("Por favor, llene todos los campos obligatorios.");
+            }
+            else
+            {
+                string fechaNacStr = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
+                ConexionSQL_Negocio agregarUsuario = new ConexionSQL_Negocio();
+                agregarUsuario.agregarUsuario(textboxApellido.Text, textboxNombre.Text, textboxTelefono.Text, fechaNacStr, textboxUsuario.Text, textboxContraseña.Text, comboboxRolUsuario.Text);
+                LimpiarCajas();
+                actualizarDatos();
+                MessageBox.Show("Usuario agregado con éxito");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,7 +98,8 @@ namespace PresentacionActualizarRoles
             {
                 MessageBox.Show("Seleccione un usuario para eliminar");
             }
-            else {
+            else
+            {
                 // Eliminar usuario
                 ConexionSQL_Negocio eliminarUsuario = new ConexionSQL_Negocio();
                 eliminarUsuario.eliminarUsuario(textboxID.Text);
@@ -104,7 +118,8 @@ namespace PresentacionActualizarRoles
             {
                 MessageBox.Show("Seleccione un usuario para editar");
             }
-            else {
+            else
+            {
                 // Editar usuario
                 ConexionSQL_Negocio editarUsuario = new ConexionSQL_Negocio();
                 string fechaNac = calendarioFechaNac.Value.ToString("yyyy-MM-dd");
@@ -121,6 +136,75 @@ namespace PresentacionActualizarRoles
         {
             volvermenu = true;
             this.Hide();
+        }
+
+        private void textboxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validar que solo se ingresen numeros enteros
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textboxNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validar que no se ingresen numeros o caracteres especiales
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textboxApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Validar que no se ingresen numeros o caracteres especiales
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

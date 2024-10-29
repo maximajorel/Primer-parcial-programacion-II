@@ -134,6 +134,7 @@ namespace PresentacionComprarProducto
                 string NombreCliente = comboBoxNombreClientes.Text;
                 string NombreEmpleado = comboBoxEmpleados.Text;
                 string montoTotal = labelTotalCompraProducto.Text;
+                montoTotal = montoTotal.Replace(",", ".");
                 cargarFactura.cargarComprobante(Tipo, NumeroFactura, Fecha, NombreEmpleado, NombreCliente, montoTotal);
                 cargarFactura.actualizarStock(textBoxIDProducto.Text, numericUpCantidadProducto.Text);
                 limpiarCampos();
@@ -145,6 +146,25 @@ namespace PresentacionComprarProducto
 
         private void comboBoxEmpleados_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void textBoxNumeroFactura_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // No permitir numeros o caracteres especiales
+            if (char.IsLetter(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void texboxTipoComprobante_KeyUp(object sender, KeyEventArgs e)
+        {
+            // Permitir solo una letra  y no permitir numeros o caracteres especiales
+            if (char.IsDigit(Convert.ToChar(texboxTipoComprobante.Text)) || char.IsSymbol(Convert.ToChar(texboxTipoComprobante.Text)) || char.IsWhiteSpace(Convert.ToChar(texboxTipoComprobante.Text)))
+            {
+                texboxTipoComprobante.Text = "";
+            }
 
         }
     }
